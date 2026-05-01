@@ -109,6 +109,7 @@ export default function SessionView({
                   key={o.id}
                   index={i + 1}
                   objection={o}
+                  mode={mode}
                   onSubmitCounter={text => onSubmitCounter(o.id, text)}
                   onAccept={cost => onAcceptObjection(o.id, cost)}
                   onSkip={() => onSkipObjection(o.id)}

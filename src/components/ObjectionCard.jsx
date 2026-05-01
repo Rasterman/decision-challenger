@@ -3,10 +3,12 @@ import { useState } from 'react'
 export default function ObjectionCard({
   index,
   objection,
+  mode,
   onSubmitCounter,
   onAccept,
   onSkip,
 }) {
+  const isConsumer = mode === 'consumer'
   const [counterText, setCounterText] = useState('')
   const [acceptMode, setAcceptMode] = useState(false)
   const [acceptText, setAcceptText] = useState('')
@@ -66,7 +68,7 @@ export default function ObjectionCard({
                 <textarea
                   value={counterText}
                   onChange={e => setCounterText(e.target.value)}
-                  placeholder="Your counter-argument…"
+                  placeholder={isConsumer ? 'Your response to this…' : 'Your counter-argument…'}
                   rows={3}
                   className="w-full bg-gray-950 border border-gray-700 rounded-lg px-3.5 py-2.5 text-sm text-gray-200
                     placeholder-gray-600 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500
@@ -82,7 +84,7 @@ export default function ObjectionCard({
                     className="flex-1 bg-gray-800 hover:bg-gray-700 disabled:opacity-40 disabled:cursor-not-allowed
                       text-gray-200 text-xs font-medium rounded-lg py-2.5 transition-colors"
                   >
-                    Submit Counter
+                    {isConsumer ? 'Submit Response' : 'Submit Counter'}
                   </button>
                   <button
                     onClick={() => setAcceptMode(true)}
@@ -102,12 +104,17 @@ export default function ObjectionCard({
             ) : (
               <div>
                 <p className="text-xs text-gray-500 mb-2">
-                  What is the team agreeing to absorb by accepting this risk?
+                  {isConsumer
+                    ? 'What are you knowingly taking on by proceeding anyway?'
+                    : 'What is the team agreeing to absorb by accepting this risk?'}
                 </p>
                 <textarea
                   value={acceptText}
                   onChange={e => setAcceptText(e.target.value)}
-                  placeholder="e.g. Team is accepting the risk that migration takes 2× longer than modeled…"
+                  placeholder={isConsumer
+                    ? 'e.g. I\'m accepting that this decision may be harder to reverse than I\'m telling myself…'
+                    : 'e.g. Team is accepting the risk that migration takes 2× longer than modeled…'}
+
                   rows={2}
                   autoFocus
                   className="w-full bg-gray-950 border border-amber-900/60 rounded-lg px-3.5 py-2.5 text-sm text-gray-200
@@ -138,12 +145,12 @@ export default function ObjectionCard({
         {isLoading && (
           <div className="flex items-center gap-2.5 text-xs text-gray-500 py-1">
             <span className="inline-block w-3 h-3 border border-gray-600 border-t-gray-300 rounded-full animate-spin" />
-            Evaluating counter…
+            {isConsumer ? 'Thinking through your response…' : 'Evaluating counter…'}
           </div>
         )}
 
         {/* Verdict */}
-        {isDone && verdict && <VerdictDisplay verdict={verdict} />}
+        {isDone && verdict && <VerdictDisplay verdict={verdict} isConsumer={isConsumer} />}
 
       </div>
     </div>
@@ -172,13 +179,13 @@ function VerdictBadge({ verdict }) {
   )
 }
 
-function VerdictDisplay({ verdict }) {
+function VerdictDisplay({ verdict, isConsumer }) {
   if (verdict.verdict === 'updated') {
     return (
       <div className="rounded-lg border border-emerald-900/50 bg-emerald-950/20 px-4 py-3.5">
         <div className="flex items-center gap-2 mb-2">
           <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0" />
-          <span className="text-xs font-medium text-emerald-400">Objection updated</span>
+          <span className="text-xs font-medium text-emerald-400">{isConsumer ? 'Concern addressed' : 'Objection updated'}</span>
         </div>
         <p className="text-xs text-gray-300 leading-relaxed mb-2">{verdict.reasoning}</p>
         {verdict.resolution_summary && (
@@ -193,7 +200,7 @@ function VerdictDisplay({ verdict }) {
       <div className="rounded-lg border border-amber-900/50 bg-amber-950/20 px-4 py-3.5">
         <div className="flex items-center gap-2 mb-2">
           <span className="w-1.5 h-1.5 rounded-full bg-amber-400 shrink-0" />
-          <span className="text-xs font-medium text-amber-400">Objection holds</span>
+          <span className="text-xs font-medium text-amber-400">{isConsumer ? 'Concern stands' : 'Objection holds'}</span>
         </div>
         <p className="text-xs text-gray-300 leading-relaxed mb-3">{verdict.reasoning}</p>
         {verdict.would_update_if && (
