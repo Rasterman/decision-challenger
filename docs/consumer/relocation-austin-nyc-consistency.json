@@ -1,0 +1,385 @@
+{
+  "meta": {
+    "model": "claude-sonnet-4-6",
+    "stakes": "medium",
+    "runs": 3,
+    "document_title": "relocation-austin-nyc.txt"
+  },
+  "document": "# Moving to NYC for the Headspace Role — Does It Make Sense?\n\n# Note on data: Austin 1BR median ~$1,450/mo (Zillow 2024), Brooklyn 1BR ~$3,200/mo (StreetEasy 2024).\n# TX has no state income tax. NY state + NYC city combined marginal rate ~12.7% on income $215K+.\n# NYC infant daycare average $3,200-3,800/mo (Care.com / NYC Childcare survey 2024).\n# Senior PM salary: Austin median ~$155K, NYC median ~$185K-200K (Levels.fyi 2024).\n\nHeadspace reached out about a Senior PM role on their consumer subscription product. The role is in-person in NYC, which means relocating from Austin. I've been thinking through this for two weeks and I want to write out the financial case honestly before I decide.\n\n**The offer**\n\nBase: $195,000 (vs. my current $155,000 at a Series C health tech company here in Austin)\nThat's a $40,000 raise, nominal. Headspace is a known brand, the product is something I use and believe in, and the team has strong PMs. The manager I'd be working for came from Spotify.\n\n**The financial case**\n\nLet me just do the math.\n\nNew York state income tax + NYC city tax combined is approximately 12.7% on income above $215K and around 10.9% on income in the $155K-$215K range. My current Texas tax on income: $0. So on my new $195K salary, I'm paying roughly $21,000 in state/city taxes I don't pay now.\n\nAdjusted for taxes: $195K - $21K = $174K take-home equivalent, vs. my current $155K. That's a real raise of about $19K per year.\n\nRent: my current apartment in East Austin is $1,450/month for a solid 1BR. A comparable 1BR in Brooklyn (Park Slope or Prospect Heights) is $3,200/month based on what I've been looking at. That's $1,750/month more, or $21,000/year.\n\nSo net of taxes and rent: $19K raise - $21K rent increase = I'm actually $2,000/year behind on just those two variables. Before groceries, transit, and everything else that costs more in New York.\n\nThe thing I keep telling myself is that the career upside is the real story here. Headspace's brand and the quality of the PM organization there would accelerate my career in a way that staying in Austin wouldn't. In two or three years I'm a stronger candidate for Director roles because of the caliber of the team and the scale of the product.\n\n**The family piece**\n\nMy wife Sarah is in marketing — brand strategy at a mid-size agency here. She's been there three years, she's good at it, and she likes the team. She's supportive of the move but we both know she'd have to find something new in New York. There are tons of agency and in-house brand strategy roles in NYC — it's honestly probably a step up for her career too. I expect she'd land something within 2-3 months.\n\nOur daughter Mia is 7 months old. We currently pay $1,800/month for daycare here in Austin which is already a lot. I looked at daycare costs in Brooklyn and the range is $3,200-$3,800/month for infant care. So that's another $1,400-$2,000/month difference, roughly $20,000/year more.\n\nLet me redo the math with childcare:\n- Tax delta: -$21K\n- Rent delta: -$21K\n- Childcare delta: -$20K\n- Gross raise: +$40K\n- Net: **-$22,000/year**\n\nOkay, that's worse than I thought. But I do think the career trajectory argument is real and that matters.\n\n**The commitment question**\n\nThe role is obviously not guaranteed beyond performance, but Headspace is a stable company (they completed the merger with OMind and are cash-flow positive) and I'd be going in with good references. If it doesn't work out after 2-3 years I can always come back to Austin or go somewhere else. The PM job market is national.\n\n**My conclusion**\n\nI can't make this work purely on the financial math for the next 12-18 months, I'm acknowledging that. But I think we can manage it — Sarah will be working again by month 3 and her NYC salary should be better than Austin. The career upside is real. Headspace is the kind of brand that looks great on a resume. And honestly, we've always wanted to live in New York at some point in our lives. Mia is 7 months old — if we're ever going to do this, now is the time before she's in school and we're more anchored.\n\nWe're moving.",
+  "runs": [
+    {
+      "run": 1,
+      "assumption_map": [
+        {
+          "id": 1,
+          "assumption": "Sarah will find comparable or better-paying marketing work in NYC within 2-3 months, eliminating the dual-income gap and making the household finances workable.",
+          "grounded_in": "Sarah will be working again by month 3 and her NYC salary should be better than Austin."
+        },
+        {
+          "id": 2,
+          "assumption": "The Headspace PM organization and brand will materially accelerate career trajectory toward Director-level roles in a way that staying in Austin would not.",
+          "grounded_in": "the career trajectory argument is real and that matters... In two or three years I'm a stronger candidate for Director roles because of the caliber of the team and the scale of the product."
+        },
+        {
+          "id": 3,
+          "assumption": "The household can absorb a -$22,000/year net financial deficit during the transition period without meaningful strain on savings, financial security, or relationship stability.",
+          "grounded_in": "I can't make this work purely on the financial math for the next 12-18 months, I'm acknowledging that. But I think we can manage it."
+        },
+        {
+          "id": 4,
+          "assumption": "If the Headspace role doesn't work out, returning to Austin or finding comparable work elsewhere is a low-friction option that preserves optionality.",
+          "grounded_in": "If it doesn't work out after 2-3 years I can always come back to Austin or go somewhere else. The PM job market is national."
+        },
+        {
+          "id": 5,
+          "assumption": "Sarah's support for the move is durable enough to withstand the actual disruption — leaving her job, her team, her network, and navigating an infant in a new city while job-searching.",
+          "grounded_in": "She's supportive of the move but we both know she'd have to find something new in New York."
+        }
+      ],
+      "objections": [
+        {
+          "id": 1,
+          "title": "Sarah's job search risk is underprice",
+          "grounded_in": "Sarah will be working again by month 3 and her NYC salary should be better than Austin.",
+          "objection": "The 2-3 month job search estimate is stated as an expectation, not a floor — but it functions as the load-bearing financial assumption that makes the deficit survivable. There is no accounting in the math for what happens if it takes 5 or 6 months, which is a common outcome for senior brand strategy roles in a competitive market.",
+          "challenge": "You have already calculated a -$22,000/year deficit before Sarah goes dark, but that figure assumes she was contributing her Austin salary the entire time. Every month she is not working in NYC represents her full lost income plus the ongoing deficit. A 5-month search — not an outlier for someone relocating with a 7-month-old and no existing NYC network — could add $40,000–$50,000 in compounded shortfall to a household already running negative. The phrase 'I expect she'd land something' is doing enormous financial work for a family with an infant in one of the most expensive cities in the country."
+        },
+        {
+          "id": 2,
+          "title": "Career upside is asserted, not stress-tested",
+          "grounded_in": "the career trajectory argument is real and that matters... In two or three years I'm a stronger candidate for Director roles because of the caliber of the team and the scale of the product.",
+          "objection": "The career acceleration argument is the entire justification for accepting a -$22,000/year net position, but it is stated as a conviction rather than examined as a hypothesis. You have not identified what specifically about Headspace — versus your current Series C role — produces the Director-level outcome.",
+          "challenge": "Consumer subscription PM at Headspace is a real credential, but 'the caliber of the team' and 'scale of the product' are generic markers. The question you haven't asked is: what is the actual promotion and comp trajectory inside Headspace, and is Director attainable there in 2-3 years, or is the brand name the asset you're buying for use at a third company? If the latter, you're paying $22,000/year for resume signal — which may be worth it, but that's a different argument than career acceleration, and it should be made explicitly so the cost is visible."
+        },
+        {
+          "id": 3,
+          "title": "Reversal is harder than stated with a child",
+          "grounded_in": "If it doesn't work out after 2-3 years I can always come back to Austin or go somewhere else. The PM job market is national.",
+          "objection": "The claim that this is reversible in 2-3 years treats the decision as symmetric — as if returning to Austin after NYC is functionally equivalent to not having gone. It is not, and the presence of Mia is the primary reason.",
+          "challenge": "In 2-3 years Mia will be 2.5-3.5 years old — embedded in childcare, possibly with friendships forming, and Sarah will have rebuilt a professional network and potentially a role she values in NYC. The 'we can always go back' framing ignores that a second relocation with a toddler, a disrupted career for Sarah again, and potentially the loss of whatever NYC professional equity she has built, is a materially larger decision than the first move. The PM job market being national does not make the family logistics national. Reversibility is real for you professionally; it is not symmetric for the household."
+        }
+      ]
+    },
+    {
+      "run": 2,
+      "assumption_map": [
+        {
+          "id": 1,
+          "assumption": "Sarah will find a comparable or better marketing role in New York within 2–3 months, maintaining dual income and offsetting the $22,000/year deficit.",
+          "grounded_in": "Sarah will be working again by month 3 and her NYC salary should be better than Austin."
+        },
+        {
+          "id": 2,
+          "assumption": "The career trajectory benefit of the Headspace role is real and material — specifically, that it will meaningfully accelerate promotion to Director-level within 2–3 years in a way the current Austin role would not.",
+          "grounded_in": "In two or three years I'm a stronger candidate for Director roles because of the caliber of the team and the scale of the product."
+        },
+        {
+          "id": 3,
+          "assumption": "The household can financially absorb a $22,000/year deficit (plus any transition gap before Sarah is employed) without material damage to savings, emergency fund, or financial stability.",
+          "grounded_in": "I can't make this work purely on the financial math for the next 12-18 months, I'm acknowledging that. But I think we can manage it."
+        },
+        {
+          "id": 4,
+          "assumption": "If the Headspace role doesn't work out, returning to a comparable position in Austin or another market is straightforwardly achievable, making the move reversible in practice.",
+          "grounded_in": "If it doesn't work out after 2-3 years I can always come back to Austin or go somewhere else. The PM job market is national."
+        },
+        {
+          "id": 5,
+          "assumption": "The in-person requirement is stable — that this role will remain in-person in New York for the duration of their tenure, making physical relocation genuinely necessary to hold the job.",
+          "grounded_in": "The role is in-person in NYC, which means relocating from Austin."
+        }
+      ],
+      "objections": [
+        {
+          "id": 1,
+          "title": "Sarah's income gap is load-bearing, not incidental",
+          "grounded_in": "Sarah will be working again by month 3 and her NYC salary should be better than Austin.",
+          "objection": "The household financial plan treats Sarah's re-employment as a near-certainty with a defined timeline, but this is an unvalidated projection made on her behalf, about a job search she hasn't started, in a city she doesn't currently have a network in.",
+          "challenge": "The $22,000/year deficit you calculated assumes dual income resumes within 90 days. But Sarah is leaving a three-year tenure at a team she likes, arriving in a new market with a 7-month-old, and conducting a job search while managing an infant in an unfamiliar city. Each of those factors independently extends job search timelines. 'There are tons of agency and in-house brand strategy roles in NYC' is a market observation, not a pipeline. You have not written anything indicating Sarah has tested this assumption — no conversations with recruiters, no exploratory interviews, no network contacts in New York. If month 3 becomes month 6, the deficit doubles for that period and your savings cushion absorbs it. You have not disclosed what that cushion is or whether it survives that scenario."
+        },
+        {
+          "id": 2,
+          "title": "Career upside is asserted, not traced",
+          "grounded_in": "In two or three years I'm a stronger candidate for Director roles because of the caliber of the team and the scale of the product.",
+          "objection": "The career trajectory argument is doing the heaviest lifting in this decision — it is the reason you proceed despite being $22,000/year behind — but it is stated as a belief rather than examined as a claim.",
+          "challenge": "You describe the Headspace PM organization as having 'strong PMs' and a manager from Spotify, but you have not written anything about what the Director-level promotion path actually looks like inside Headspace, whether the company promotes from within at that level, or whether the consumer subscription product you'd own has the organizational visibility that produces Director candidates. A known brand on a resume is not the same as a role that develops the specific skills and track record Director hiring managers look for. The career upside claim is the one assumption that makes the math acceptable — and it is the assumption you have examined least rigorously."
+        },
+        {
+          "id": 3,
+          "title": "Reversibility assumes Austin remains accessible",
+          "grounded_in": "If it doesn't work out after 2-3 years I can always come back to Austin or go somewhere else.",
+          "objection": "The exit option framing treats Austin as a stable fallback, but the conditions that made Austin viable — your current role, Sarah's current role, your existing childcare arrangement, your social infrastructure — will not be preserved by a 2–3 year absence.",
+          "challenge": "You are leaving a Series C health tech company where you presumably have tenure, relationships, and standing. Sarah is leaving a three-year position at a team she likes. Your $1,450/month Austin apartment will be gone. The childcare provider Mia currently has will be gone. If you return in year three, you are not returning to what you left — you are starting over in Austin with the same dual job search problem you're accepting in New York now, except without the Headspace brand story being new anymore, and potentially without Sarah's New York network either. 'The PM job market is national' is true but it does not make Austin specifically recoverable. The reversibility argument is quieting a concern that deserves to stay loud."
+        }
+      ]
+    },
+    {
+      "run": 3,
+      "assumption_map": [
+        {
+          "id": 1,
+          "assumption": "Sarah will find a comparable or better marketing role in NYC within 2–3 months, restoring dual household income before the financial gap becomes unmanageable.",
+          "grounded_in": "Sarah will be working again by month 3 and her NYC salary should be better than Austin."
+        },
+        {
+          "id": 2,
+          "assumption": "The Headspace role will materially accelerate career progression toward Director-level positions in a way that staying in Austin would not, and this trajectory will convert into higher compensation within 2–3 years.",
+          "grounded_in": "In two or three years I'm a stronger candidate for Director roles because of the caliber of the team and the scale of the product."
+        },
+        {
+          "id": 3,
+          "assumption": "If the role or the move doesn't work out, the situation is recoverable — returning to Austin or relocating elsewhere is a realistic fallback that doesn't carry serious costs.",
+          "grounded_in": "If it doesn't work out after 2-3 years I can always come back to Austin or go somewhere else. The PM job market is national."
+        },
+        {
+          "id": 4,
+          "assumption": "The household can absorb a $22,000/year net deficit — plus any income gap during Sarah's job search — without structural financial damage during the transition period.",
+          "grounded_in": "I can't make this work purely on the financial math for the next 12-18 months, I'm acknowledging that. But I think we can manage it."
+        },
+        {
+          "id": 5,
+          "assumption": "Sarah's support for the move is durable enough to withstand the stress of a simultaneous relocation, infant care disruption, agency job search, and loss of her existing team and career context.",
+          "grounded_in": "She's supportive of the move but we both know she'd have to find something new in New York."
+        }
+      ],
+      "objections": [
+        {
+          "id": 1,
+          "title": "Sarah's job search risk is structurally undercounted",
+          "grounded_in": "Sarah will be working again by month 3 and her NYC salary should be better than Austin.",
+          "objection": "The '2–3 months' timeline is stated as an expectation, not a plan — there is no evidence cited for it, and the financial model depends on it being correct. A search that runs 5–6 months instead of 2–3 adds $15,000–$20,000 in additional deficit on top of the already -$22,000/year gap.",
+          "challenge": "Brand strategy at a mid-size agency is a specific niche, and NYC's agency market, while large, is also highly competitive with candidates who already have NYC client relationships and network presence. Sarah is entering that market cold, without local contacts, while also managing an infant and a household in a new city. The '2–3 months' figure carries the full weight of the financial bridge, yet it is the assumption in this analysis with the least supporting evidence and the most variables working against it."
+        },
+        {
+          "id": 2,
+          "title": "Career upside is real but not yet priced",
+          "grounded_in": "In two or three years I'm a stronger candidate for Director roles because of the caliber of the team and the scale of the product.",
+          "objection": "The career trajectory argument is doing the heaviest lifting in this decision, yet it is the least quantified element in an otherwise numerically rigorous analysis. 'Stronger candidate for Director roles' is not the same as a Director role, and the financial model never prices what that trajectory is actually worth against a known $22,000/year cost.",
+          "challenge": "Headspace is a consumer wellness brand that completed a merger and is cash-flow positive — not a hypergrowth company. The PM org may be strong, but 'caliber of the team' and 'scale of the product' are the same qualities claimed by many roles that do not in fact accelerate careers as expected. Without a concrete theory of how this specific role at this specific company in this specific product stage produces Director-level leverage that Austin cannot, the career argument is functioning as a narrative that absorbs whatever the math can't justify."
+        },
+        {
+          "id": 3,
+          "title": "Reversibility assumption ignores relocation sunk costs",
+          "grounded_in": "If it doesn't work out after 2-3 years I can always come back to Austin or go somewhere else.",
+          "objection": "The fallback scenario is framed as roughly costless, but a 2–3 year NYC run at -$22,000/year net — before accounting for Sarah's transition gap, relocation expenses, and the cost of moving back — represents a structural financial setback of $50,000–$80,000 or more in a period when you have a young child and no savings buffer is mentioned.",
+          "challenge": "The Austin housing market will not be frozen in place. Your $1,450/month apartment will be gone. Re-entry into Austin after 2–3 years means returning into a market at whatever prices exist then, likely without the lease advantage you currently hold. 'The PM job market is national' addresses job portability, not the full picture of what reversing this decision would actually cost — financially and in terms of Sarah's career, which would have been uprooted twice in 2–3 years."
+        }
+      ]
+    }
+  ],
+  "analysis": {
+    "language_variance_score": {
+      "value": 50,
+      "unit": "percentage points",
+      "interpretation": "+50pp — model is rephrasing the same concerns across runs (semantic reliability)",
+      "keyword_consistency_rate": 50,
+      "semantic_consistency_rate": 100
+    },
+    "raw": {
+      "method": "keyword overlap — titles sharing ≥1 non-stop word are grouped",
+      "clusters": [
+        {
+          "representative_title": "Sarah's job search risk is underprice",
+          "matched_titles": [
+            "Sarah's job search risk is underprice",
+            "Sarah's income gap is load-bearing, not incidental",
+            "Sarah's job search risk is structurally undercounted"
+          ],
+          "appeared_in_runs": [
+            1,
+            2,
+            3
+          ],
+          "appeared_in_count": 3
+        },
+        {
+          "representative_title": "Career upside is asserted, not stress-tested",
+          "matched_titles": [
+            "Career upside is asserted, not stress-tested",
+            "Sarah's income gap is load-bearing, not incidental",
+            "Career upside is asserted, not traced",
+            "Career upside is real but not yet priced"
+          ],
+          "appeared_in_runs": [
+            1,
+            2,
+            3
+          ],
+          "appeared_in_count": 3
+        },
+        {
+          "representative_title": "Reversibility assumes Austin remains accessible",
+          "matched_titles": [
+            "Reversibility assumes Austin remains accessible",
+            "Reversibility assumption ignores relocation sunk costs"
+          ],
+          "appeared_in_runs": [
+            2,
+            3
+          ],
+          "appeared_in_count": 2
+        },
+        {
+          "representative_title": "Reversal is harder than stated with a child",
+          "matched_titles": [
+            "Reversal is harder than stated with a child"
+          ],
+          "appeared_in_runs": [
+            1
+          ],
+          "appeared_in_count": 1
+        }
+      ],
+      "consistent_across_all_runs": [
+        {
+          "representative_title": "Sarah's job search risk is underprice",
+          "matched_titles": [
+            "Sarah's job search risk is underprice",
+            "Sarah's income gap is load-bearing, not incidental",
+            "Sarah's job search risk is structurally undercounted"
+          ],
+          "appeared_in_runs": [
+            1,
+            2,
+            3
+          ],
+          "appeared_in_count": 3
+        },
+        {
+          "representative_title": "Career upside is asserted, not stress-tested",
+          "matched_titles": [
+            "Career upside is asserted, not stress-tested",
+            "Sarah's income gap is load-bearing, not incidental",
+            "Career upside is asserted, not traced",
+            "Career upside is real but not yet priced"
+          ],
+          "appeared_in_runs": [
+            1,
+            2,
+            3
+          ],
+          "appeared_in_count": 3
+        }
+      ],
+      "appeared_in_some_runs": [
+        {
+          "representative_title": "Reversibility assumes Austin remains accessible",
+          "matched_titles": [
+            "Reversibility assumes Austin remains accessible",
+            "Reversibility assumption ignores relocation sunk costs"
+          ],
+          "appeared_in_runs": [
+            2,
+            3
+          ],
+          "appeared_in_count": 2
+        }
+      ],
+      "unique_to_one_run": [
+        {
+          "representative_title": "Reversal is harder than stated with a child",
+          "matched_titles": [
+            "Reversal is harder than stated with a child"
+          ],
+          "appeared_in_runs": [
+            1
+          ],
+          "appeared_in_count": 1
+        }
+      ]
+    },
+    "deduplicated": {
+      "method": "semantic grouping via Claude — same underlying concern regardless of phrasing",
+      "clusters": [
+        {
+          "canonical_title": "Sarah's job search risk is underweighted",
+          "titles": [
+            "Sarah's job search risk is underprice",
+            "Sarah's income gap is load-bearing, not incidental",
+            "Sarah's job search risk is structurally undercounted"
+          ],
+          "runs": [
+            1,
+            2,
+            3
+          ],
+          "appeared_in_count": 3
+        },
+        {
+          "canonical_title": "Career upside is asserted without rigorous support",
+          "titles": [
+            "Career upside is asserted, not stress-tested",
+            "Career upside is asserted, not traced",
+            "Career upside is real but not yet priced"
+          ],
+          "runs": [
+            1,
+            2,
+            3
+          ],
+          "appeared_in_count": 3
+        },
+        {
+          "canonical_title": "Reversibility assumption is overstated or fragile",
+          "titles": [
+            "Reversal is harder than stated with a child",
+            "Reversibility assumes Austin remains accessible",
+            "Reversibility assumption ignores relocation sunk costs"
+          ],
+          "runs": [
+            1,
+            2,
+            3
+          ],
+          "appeared_in_count": 3
+        }
+      ],
+      "consistent_across_all_runs": [
+        {
+          "canonical_title": "Sarah's job search risk is underweighted",
+          "titles": [
+            "Sarah's job search risk is underprice",
+            "Sarah's income gap is load-bearing, not incidental",
+            "Sarah's job search risk is structurally undercounted"
+          ],
+          "runs": [
+            1,
+            2,
+            3
+          ],
+          "appeared_in_count": 3
+        },
+        {
+          "canonical_title": "Career upside is asserted without rigorous support",
+          "titles": [
+            "Career upside is asserted, not stress-tested",
+            "Career upside is asserted, not traced",
+            "Career upside is real but not yet priced"
+          ],
+          "runs": [
+            1,
+            2,
+            3
+          ],
+          "appeared_in_count": 3
+        },
+        {
+          "canonical_title": "Reversibility assumption is overstated or fragile",
+          "titles": [
+            "Reversal is harder than stated with a child",
+            "Reversibility assumes Austin remains accessible",
+            "Reversibility assumption ignores relocation sunk costs"
+          ],
+          "runs": [
+            1,
+            2,
+            3
+          ],
+          "appeared_in_count": 3
+        }
+      ],
+      "appeared_in_some_runs": [],
+      "unique_to_one_run": []
+    }
+  }
+}

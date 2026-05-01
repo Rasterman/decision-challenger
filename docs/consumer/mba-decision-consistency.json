@@ -1,0 +1,419 @@
+{
+  "meta": {
+    "model": "claude-sonnet-4-6",
+    "stakes": "medium",
+    "runs": 3,
+    "document_title": "mba-decision.txt"
+  },
+  "document": "# Should I Get an MBA? Working Through the Decision\n\n# Note on data: Wharton tuition 2024-25 is $87,490/year (Wharton website), total program ~$174,980.\n# Wharton MBA employment report 2024: median base salary $175,000, median signing bonus $30,000.\n# Senior PM salary at 5-6 years experience: $155-175K base (Levels.fyi, Glassdoor 2024 data).\n# Living expenses at Wharton (Philadelphia): ~$25-30K/year on top of tuition.\n\nI've been in product for five years, currently a Senior PM at a fintech startup (Series C, $185M raised, about 200 people). I make $165,000 base plus equity. I'm 31.\n\nI've been going back and forth on the Wharton MBA for about eight months. I got into the deferred enrollment program two years ago and let it lapse. I'm applying for the standard two-year program now. I want to write out my actual reasoning because I think I've been telling myself a story that might not fully hold together.\n\n**The financial case**\n\nTuition at Wharton is $87,490/year. Two years: $174,980. Add living expenses in Philadelphia of roughly $27,000/year = $54,000 over two years. Total out-of-pocket cost: approximately $229,000.\n\nWharton's Class of 2024 employment report shows median base salary of $175,000 for MBA graduates. Median signing bonus is $30,000. In product management, the post-MBA bump tends to be larger if you're coming from a non-traditional PM background, but my background is already PM so let's use the baseline.\n\nI currently make $165,000. Post-MBA median is $175,000. That's a $10,000/year lift in base salary.\n\nAt $10K/year uplift, the payback period on $229K is 22.9 years. That seems absurd, but people also cite the signing bonus, so let's include it: $229K - $30K = $199K remaining, at $10K/year = 19.9 years. Still absurd.\n\nBut I think I'm framing this wrong. I'm not doing an MBA to go back to being a Senior PM. I'm doing it because:\n\n1. I want a path into VC or growth equity. I keep getting filtered at the \"MBA from top school\" screen. It's a credential problem.\n2. I want the Wharton network. The alumni base in fintech and VC is extremely dense.\n3. I want to explore consulting (specifically MBB post-MBA) as an option I've never had. Median consulting salary post-Wharton is more like $190-195K plus bonus structures.\n4. Honestly, I'm a little burned out and a two-year reset with intellectual variety sounds good.\n\nOn the VC path specifically: post-MBA roles at VC firms are rare but they exist, and Wharton's VC lab and alumni network are a real accelerant. If I land a VC associate role or consulting role, the economics look more like $200-220K in year 1 post-MBA — a $35-55K lift from current, not $10K. At $45K/year: $199K ÷ $45K = 4.4 years payback. That's a real return.\n\n**The opportunity cost I'm not accounting for**\n\nI keep writing down \"two years of foregone income\" as one line item, but I should be honest about what that actually is. I'm earning $165K now. If I stay on my current trajectory, by the time I graduate I'd probably be at $175-185K base with more equity. So the real cost isn't $165K × 2 = $330K foregone — it's more like $170K average × 2 = $340K.\n\nTotal real cost: $229K tuition/living + $340K foregone income = $569K. At a $45K/year uplift: 12.6 years to break even in cash terms. That's still the wrong framing though because it ignores optionality value and the VC/consulting path that my current trajectory doesn't unlock.\n\n**What's actually driving this**\n\nI want to be honest with myself. The financial ROI case is genuinely weak if I'm comparing post-MBA Senior PM salary to current Senior PM salary. The case only looks good if I assume I successfully transition to a higher-ceiling role (VC, consulting, startup leadership with a credentialed path).\n\nThe other thing I notice is that some of my motivation is avoidance. I'm not thriving in my current role — the company has some organizational issues I don't see resolving, and part of me wants a principled exit rather than just looking for another PM job. That's not a good reason to spend $229K.\n\nI think the right question is: do I actually want to work in VC or consulting, or do I want the MBA because it's a socially legible achievement that gives me cover to leave my current situation?\n\nI don't have a clean answer to that. But I'm going to apply and decide when I have an acceptance in hand.\n\n**Bottom line**\n\nThe ROI is real if — and only if — I use the MBA to pivot rather than return to PM. The network case is strong. The credential barrier in VC is real. I'm applying.",
+  "runs": [
+    {
+      "run": 1,
+      "assumption_map": [
+        {
+          "id": 1,
+          "assumption": "The MBA is the necessary and sufficient credential to clear the 'top school MBA' filter in VC and growth equity hiring, and that clearing this filter meaningfully increases the probability of landing a VC associate role.",
+          "grounded_in": "I keep getting filtered at the 'MBA from top school' screen. It's a credential problem."
+        },
+        {
+          "id": 2,
+          "assumption": "The financial case depends on successfully pivoting to VC or consulting post-MBA, not returning to PM — and the person believes this pivot is sufficiently likely to justify the economics.",
+          "grounded_in": "The ROI is real if — and only if — I use the MBA to pivot rather than return to PM."
+        },
+        {
+          "id": 3,
+          "assumption": "The Wharton network and VC Lab are material accelerants to breaking into VC specifically, not just generally valuable credentials that correlate with outcomes already determined by other factors.",
+          "grounded_in": "Wharton's VC lab and alumni network are a real accelerant."
+        },
+        {
+          "id": 4,
+          "assumption": "The current role dissatisfaction is situational — tied to this specific company's organizational issues — and not a signal about PM work itself, meaning an MBA pivot is the right intervention rather than a direct job change.",
+          "grounded_in": "the company has some organizational issues I don't see resolving, and part of me wants a principled exit rather than just looking for another PM job."
+        },
+        {
+          "id": 5,
+          "assumption": "Deferring this decision until an acceptance is in hand is a low-cost move — that having the acceptance will produce the clarity currently absent rather than increasing commitment pressure that forecloses honest re-evaluation.",
+          "grounded_in": "I'm going to apply and decide when I have an acceptance in hand."
+        }
+      ],
+      "objections": [
+        {
+          "id": 1,
+          "title": "Pivot probability is doing all the work",
+          "grounded_in": "The ROI is real if — and only if — I use the MBA to pivot rather than return to PM.",
+          "objection": "The entire financial case collapses to a single variable — successful pivot rate — which you have not estimated and which you are treating as assumed rather than probable. You've correctly identified that the math only works on the pivot path, but you have not stated what you believe the actual probability of landing a VC associate or MBB consulting role is, nor what happens to the $569K total cost if you end up back in PM.",
+          "challenge": "VC associate roles post-MBA are scarce — a small number of seats across all top MBA programs combined — and your background is PM at a Series C fintech, not investing, banking, or consulting. The credential barrier you've identified is real, but clearing it is not the same as competing successfully once inside it. If the pivot probability is, say, 30-40%, the expected value calculation looks materially different than if it's 70-80%, and you have written nothing that grounds an estimate. You are carrying a $569K exposure against an outcome you have not actually probability-weighted."
+        },
+        {
+          "id": 2,
+          "title": "Acceptance creates commitment pressure you're underweighting",
+          "grounded_in": "I'm going to apply and decide when I have an acceptance in hand.",
+          "objection": "You are treating the acceptance as a decision gate that will produce clarity, but you have not resolved the core ambiguity — 'do I actually want to work in VC or consulting, or do I want the MBA because it's a socially legible achievement' — and an acceptance letter does not answer that question. What it does is dramatically raise the psychological and social cost of saying no.",
+          "challenge": "You already let the deferred enrollment lapse once, which suggests the clarity you're waiting for does not reliably arrive on its own. Applying and receiving an acceptance reframes the decision from 'should I pursue this?' to 'should I give up what I already have?' — a much harder question to answer no to, especially when you're also burned out and looking for a principled exit from your current role. The admission decision was supposed to be a forcing function for clarity, but it may instead be a commitment trap that converts an unresolved question into a default yes."
+        },
+        {
+          "id": 3,
+          "title": "Burnout is contaminating the signal",
+          "grounded_in": "Honestly, I'm a little burned out and a two-year reset with intellectual variety sounds good... part of me wants a principled exit rather than just looking for another PM job.",
+          "objection": "You have identified burnout and organizational frustration as motivators and then partially discounted them as 'not a good reason to spend $229K' — but you have not accounted for how significantly burnout distorts the perceived value of an exit, any exit, relative to staying and grinding through a direct job search.",
+          "challenge": "The MBA functions here as a high-cost, high-prestige escape route that is much easier to justify than admitting you want to leave a company that isn't working out. The two-year reset framing — 'intellectual variety,' network-building, a credential — makes the exit feel purposeful rather than reactive. But the same burnout that makes the MBA look attractive also makes the counterfactual — taking four months off, doing a direct PM job search, and targeting VC-adjacent roles like growth or operator-in-residence — look worse than it probably is. You are evaluating this decision from inside a state that systematically inflates the appeal of structured escape."
+        }
+      ]
+    },
+    {
+      "run": 2,
+      "assumption_map": [
+        {
+          "id": 1,
+          "assumption": "The primary financial return depends on successfully transitioning into VC or consulting post-MBA, not returning to product management. The decision is only economically defensible if that pivot actually happens.",
+          "grounded_in": "The ROI is real if — and only if — I use the MBA to pivot rather than return to PM."
+        },
+        {
+          "id": 2,
+          "assumption": "The 'MBA from top school' credential filter in VC is a genuine, primary barrier to entry that a Wharton MBA will meaningfully remove — not one factor among many in a highly competitive, relationship-driven hiring process.",
+          "grounded_in": "I keep getting filtered at the 'MBA from top school' screen. It's a credential problem."
+        },
+        {
+          "id": 3,
+          "assumption": "The decision can be safely deferred until an acceptance is in hand — that applying and then deciding preserves meaningful optionality without creating its own momentum or commitment pressure.",
+          "grounded_in": "I'm going to apply and decide when I have an acceptance in hand."
+        },
+        {
+          "id": 4,
+          "assumption": "Burnout and organizational frustration at the current company are background context, not a primary driver — the MBA decision is fundamentally about career trajectory, not an exit from a bad situation.",
+          "grounded_in": "part of me wants a principled exit rather than just looking for another PM job. That's not a good reason to spend $229K."
+        },
+        {
+          "id": 5,
+          "assumption": "The Wharton network and VC Lab will function as a genuine accelerant to a VC associate role — that access to alumni and programming translates into actual hiring outcomes at the target role level.",
+          "grounded_in": "Wharton's VC lab and alumni network are a real accelerant. If I land a VC associate role or consulting role, the economics look more like $200-220K in year 1 post-MBA."
+        }
+      ],
+      "objections": [
+        {
+          "id": 1,
+          "title": "Credential barrier diagnosis may be wrong",
+          "grounded_in": "I keep getting filtered at the 'MBA from top school' screen. It's a credential problem.",
+          "objection": "You've diagnosed your VC rejection pattern as a credential filter, but 'filtered at the MBA screen' could mean the credential is disqualifying you, or it could mean the credential is the visible surface of a deeper selection criterion — deal sourcing networks, prior investing experience, or operator-to-investor narrative — that the MBA alone doesn't resolve.",
+          "challenge": "VC associate hiring at the post-MBA level is among the most opaque and relationship-dependent processes in finance. If the firms filtering you on credential would hire a Wharton MBA with your background, your analysis holds. But if what they actually want is someone with prior investing exposure, a carried interest track record, or a warm intro from a GP — and the MBA screen is merely correlated with that — you will emerge from Wharton credentialed and still rejected, having spent $569K to eliminate one variable while the real variable remains untouched. You have not shown evidence that Wharton MBAs with your specific profile (operator, no prior investing role) are converting to VC associate roles at a rate that justifies this diagnosis."
+        },
+        {
+          "id": 2,
+          "title": "Avoidance motive will follow you into the program",
+          "grounded_in": "part of me wants a principled exit rather than just looking for another PM job. That's not a good reason to spend $229K... do I actually want to work in VC or consulting, or do I want the MBA because it's a socially legible achievement that gives me cover to leave my current situation?",
+          "objection": "You've identified the avoidance motive clearly, then set it aside without resolving it — but the unresolved version of this question doesn't become safer when an acceptance letter arrives. It becomes harder to answer honestly.",
+          "challenge": "Acceptance introduces social proof, sunk cost on the application, and narrative momentum that all push toward enrollment independent of whether the underlying question got answered. You've explicitly noted you don't have a clean answer to whether you want VC or consulting versus wanting legible cover to exit — and you're proposing to make a $569K decision at the moment when psychological pressure to say yes will be highest and your ability to think clearly about that question will be lowest. The decision point you've chosen is structurally the worst one for catching this particular blind spot."
+        },
+        {
+          "id": 3,
+          "title": "VC pivot success rate is load-bearing and unexamined",
+          "grounded_in": "If I land a VC associate role or consulting role, the economics look more like $200-220K in year 1 post-MBA — a $35-55K lift from current, not $10K. At $45K/year: $199K ÷ $45K = 4.4 years payback. That's a real return.",
+          "objection": "Your favorable ROI scenario is entirely conditional on landing a VC or consulting role, but you haven't examined the base rate at which Wharton MBAs with a PM background and no prior investing experience actually convert to VC associate roles — and that rate is the single most important number in your financial model.",
+          "challenge": "The 4.4-year payback figure is doing enormous work in your reasoning, but it's only valid if you land the target role. Wharton's own employment report shows the median outcome — and median does not go to VC. VC hiring from MBA programs is a small fraction of total placements, concentrated in candidates with pre-MBA finance exposure or exceptional deal sourcing networks. If there's a 20% probability you land the VC or MBB role and an 80% probability you return to a senior PM role, your expected payback period is not 4.4 years — it's something much closer to your 'absurd' 20-year baseline. You've built your financial case entirely on the optimistic branch of the probability tree without naming the probability."
+        }
+      ]
+    },
+    {
+      "run": 3,
+      "assumption_map": [
+        {
+          "id": 1,
+          "assumption": "The MBA credential is the primary barrier preventing entry into VC, and possessing it will meaningfully increase the probability of landing a VC associate role post-graduation.",
+          "grounded_in": "I keep getting filtered at the 'MBA from top school' screen. It's a credential problem."
+        },
+        {
+          "id": 2,
+          "assumption": "The financial ROI calculation is valid because the post-MBA career outcome will be VC or consulting rather than a return to PM — the pivot will actually happen.",
+          "grounded_in": "The ROI is real if — and only if — I use the MBA to pivot rather than return to PM."
+        },
+        {
+          "id": 3,
+          "assumption": "The Wharton network provides meaningful, differentiated access to fintech and VC opportunities that cannot be replicated through other paths available to someone already working in fintech PM.",
+          "grounded_in": "I want the Wharton network. The alumni base in fintech and VC is extremely dense."
+        },
+        {
+          "id": 4,
+          "assumption": "The desire to work in VC or consulting reflects genuine career fit rather than being primarily a function of wanting to exit the current role.",
+          "grounded_in": "do I actually want to work in VC or consulting, or do I want the MBA because it's a socially legible achievement that gives me cover to leave my current situation?"
+        },
+        {
+          "id": 5,
+          "assumption": "Deferring the decision until an acceptance is in hand is a meaningful decision point rather than a commitment threshold that will be difficult to walk back once reached.",
+          "grounded_in": "I'm going to apply and decide when I have an acceptance in hand."
+        }
+      ],
+      "objections": [
+        {
+          "id": 1,
+          "title": "Pivot success is assumed, not planned",
+          "grounded_in": "The ROI is real if — and only if — I use the MBA to pivot rather than return to PM.",
+          "objection": "The entire financial case rests on successfully landing in VC or consulting post-MBA, but the writing contains no analysis of how probable that outcome actually is — only that the network and credential help.",
+          "challenge": "Wharton MBA placement into VC is a small fraction of each graduating class, and competition comes from classmates with dedicated finance, investing, or operating backgrounds specifically packaged for VC recruitment. The credential removes one filter but doesn't resolve the underlying question of why a VC firm would choose this candidate over others with the same credential plus two years of investing or deal experience. The ROI math at $45K uplift is only valid at a probability of 1.0 — if the realistic probability of the pivot is 30-40%, the expected value of the investment looks materially different, and the fallback is spending $569K in total cost to return to a PM role at a salary $10K above current."
+        },
+        {
+          "id": 2,
+          "title": "Acceptance creates commitment bias before real decision",
+          "grounded_in": "I'm going to apply and decide when I have an acceptance in hand.",
+          "objection": "Framing the acceptance as the decision point treats a psychologically loaded moment — having just been validated by Wharton — as the neutral occasion for clear-eyed evaluation, which it is not.",
+          "challenge": "The application process itself involves months of work, essays, recommendations, and social signaling to one's network, all of which create sunk cost and identity investment before the stated decision is even reached. An acceptance letter from Wharton arrives with significant social momentum — telling people you turned down Wharton requires justification in a way that simply not applying does not. The person has already let one deferred enrollment lapse, which means they have prior evidence that the real decision calculus doesn't resolve cleanly at the acceptance stage either — yet the plan is to repeat that structure."
+        },
+        {
+          "id": 3,
+          "title": "Burnout is doing unacknowledged work in this decision",
+          "grounded_in": "Honestly, I'm a little burned out and a two-year reset with intellectual variety sounds good... part of me wants a principled exit rather than just looking for another PM job. That's not a good reason to spend $229K.",
+          "objection": "The burnout motivation is named and then dismissed in a single sentence, but the framing of the MBA as a 'two-year reset' and 'principled exit' suggests it is load-bearing in a way that the dismissal doesn't resolve.",
+          "challenge": "Burnout reliably distorts preference intensity — options that offer escape feel more attractive independent of their actual fit, and the urgency to act feels more justified than it is. The specific language used — 'principled exit,' 'intellectual variety,' 'reset' — describes relief from the current situation more than it describes attraction to the destination. If the organizational issues at the current company were resolved tomorrow, the question of whether VC or consulting is actually the right career move would need to be answered on its own terms, without the tailwind of wanting out. That question is currently being bypassed, not answered."
+        }
+      ]
+    }
+  ],
+  "analysis": {
+    "language_variance_score": {
+      "value": -30,
+      "unit": "percentage points",
+      "interpretation": "-30pp — keyword clustering overcounts consistency; semantic view is more pessimistic",
+      "keyword_consistency_rate": 50,
+      "semantic_consistency_rate": 20
+    },
+    "raw": {
+      "method": "keyword overlap — titles sharing ≥1 non-stop word are grouped",
+      "clusters": [
+        {
+          "representative_title": "Pivot probability is doing all the work",
+          "matched_titles": [
+            "Pivot probability is doing all the work",
+            "VC pivot success rate is load-bearing and unexamined",
+            "Pivot success is assumed, not planned",
+            "Burnout is doing unacknowledged work in this decision"
+          ],
+          "appeared_in_runs": [
+            1,
+            2,
+            3
+          ],
+          "appeared_in_count": 3
+        },
+        {
+          "representative_title": "Acceptance creates commitment pressure you're underweighting",
+          "matched_titles": [
+            "Acceptance creates commitment pressure you're underweighting",
+            "Avoidance motive will follow you into the program",
+            "Acceptance creates commitment bias before real decision"
+          ],
+          "appeared_in_runs": [
+            1,
+            2,
+            3
+          ],
+          "appeared_in_count": 3
+        },
+        {
+          "representative_title": "Burnout is contaminating the signal",
+          "matched_titles": [
+            "Burnout is contaminating the signal",
+            "Burnout is doing unacknowledged work in this decision"
+          ],
+          "appeared_in_runs": [
+            1,
+            3
+          ],
+          "appeared_in_count": 2
+        },
+        {
+          "representative_title": "Credential barrier diagnosis may be wrong",
+          "matched_titles": [
+            "Credential barrier diagnosis may be wrong"
+          ],
+          "appeared_in_runs": [
+            2
+          ],
+          "appeared_in_count": 1
+        }
+      ],
+      "consistent_across_all_runs": [
+        {
+          "representative_title": "Pivot probability is doing all the work",
+          "matched_titles": [
+            "Pivot probability is doing all the work",
+            "VC pivot success rate is load-bearing and unexamined",
+            "Pivot success is assumed, not planned",
+            "Burnout is doing unacknowledged work in this decision"
+          ],
+          "appeared_in_runs": [
+            1,
+            2,
+            3
+          ],
+          "appeared_in_count": 3
+        },
+        {
+          "representative_title": "Acceptance creates commitment pressure you're underweighting",
+          "matched_titles": [
+            "Acceptance creates commitment pressure you're underweighting",
+            "Avoidance motive will follow you into the program",
+            "Acceptance creates commitment bias before real decision"
+          ],
+          "appeared_in_runs": [
+            1,
+            2,
+            3
+          ],
+          "appeared_in_count": 3
+        }
+      ],
+      "appeared_in_some_runs": [
+        {
+          "representative_title": "Burnout is contaminating the signal",
+          "matched_titles": [
+            "Burnout is contaminating the signal",
+            "Burnout is doing unacknowledged work in this decision"
+          ],
+          "appeared_in_runs": [
+            1,
+            3
+          ],
+          "appeared_in_count": 2
+        }
+      ],
+      "unique_to_one_run": [
+        {
+          "representative_title": "Credential barrier diagnosis may be wrong",
+          "matched_titles": [
+            "Credential barrier diagnosis may be wrong"
+          ],
+          "appeared_in_runs": [
+            2
+          ],
+          "appeared_in_count": 1
+        }
+      ]
+    },
+    "deduplicated": {
+      "method": "semantic grouping via Claude — same underlying concern regardless of phrasing",
+      "clusters": [
+        {
+          "canonical_title": "Pivot success rate is unexamined and assumed",
+          "titles": [
+            "Pivot probability is doing all the work",
+            "VC pivot success rate is load-bearing and unexamined",
+            "Pivot success is assumed, not planned"
+          ],
+          "runs": [
+            1,
+            2,
+            3
+          ],
+          "appeared_in_count": 3
+        },
+        {
+          "canonical_title": "Acceptance creates premature commitment pressure",
+          "titles": [
+            "Acceptance creates commitment pressure you're underweighting",
+            "Acceptance creates commitment bias before real decision"
+          ],
+          "runs": [
+            1,
+            3
+          ],
+          "appeared_in_count": 2
+        },
+        {
+          "canonical_title": "Burnout is distorting the decision signal",
+          "titles": [
+            "Burnout is contaminating the signal",
+            "Burnout is doing unacknowledged work in this decision"
+          ],
+          "runs": [
+            1,
+            3
+          ],
+          "appeared_in_count": 2
+        },
+        {
+          "canonical_title": "Avoidance motive will persist into new path",
+          "titles": [
+            "Avoidance motive will follow you into the program"
+          ],
+          "runs": [
+            2
+          ],
+          "appeared_in_count": 1
+        },
+        {
+          "canonical_title": "Credential barrier diagnosis may be incorrect",
+          "titles": [
+            "Credential barrier diagnosis may be wrong"
+          ],
+          "runs": [
+            2
+          ],
+          "appeared_in_count": 1
+        }
+      ],
+      "consistent_across_all_runs": [
+        {
+          "canonical_title": "Pivot success rate is unexamined and assumed",
+          "titles": [
+            "Pivot probability is doing all the work",
+            "VC pivot success rate is load-bearing and unexamined",
+            "Pivot success is assumed, not planned"
+          ],
+          "runs": [
+            1,
+            2,
+            3
+          ],
+          "appeared_in_count": 3
+        }
+      ],
+      "appeared_in_some_runs": [
+        {
+          "canonical_title": "Acceptance creates premature commitment pressure",
+          "titles": [
+            "Acceptance creates commitment pressure you're underweighting",
+            "Acceptance creates commitment bias before real decision"
+          ],
+          "runs": [
+            1,
+            3
+          ],
+          "appeared_in_count": 2
+        },
+        {
+          "canonical_title": "Burnout is distorting the decision signal",
+          "titles": [
+            "Burnout is contaminating the signal",
+            "Burnout is doing unacknowledged work in this decision"
+          ],
+          "runs": [
+            1,
+            3
+          ],
+          "appeared_in_count": 2
+        }
+      ],
+      "unique_to_one_run": [
+        {
+          "canonical_title": "Avoidance motive will persist into new path",
+          "titles": [
+            "Avoidance motive will follow you into the program"
+          ],
+          "runs": [
+            2
+          ],
+          "appeared_in_count": 1
+        },
+        {
+          "canonical_title": "Credential barrier diagnosis may be incorrect",
+          "titles": [
+            "Credential barrier diagnosis may be wrong"
+          ],
+          "runs": [
+            2
+          ],
+          "appeared_in_count": 1
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+# Moving to NYC for the Headspace Role — Does It Make Sense?
+
+# Note on data: Austin 1BR median ~$1,450/mo (Zillow 2024), Brooklyn 1BR ~$3,200/mo (StreetEasy 2024).
+# TX has no state income tax. NY state + NYC city combined marginal rate ~12.7% on income $215K+.
+# NYC infant daycare average $3,200-3,800/mo (Care.com / NYC Childcare survey 2024).
+# Senior PM salary: Austin median ~$155K, NYC median ~$185K-200K (Levels.fyi 2024).
+
+Headspace reached out about a Senior PM role on their consumer subscription product. The role is in-person in NYC, which means relocating from Austin. I've been thinking through this for two weeks and I want to write out the financial case honestly before I decide.
+
+**The offer**
+
+Base: $195,000 (vs. my current $155,000 at a Series C health tech company here in Austin)
+That's a $40,000 raise, nominal. Headspace is a known brand, the product is something I use and believe in, and the team has strong PMs. The manager I'd be working for came from Spotify.
+
+**The financial case**
+
+Let me just do the math.
+
+New York state income tax + NYC city tax combined is approximately 12.7% on income above $215K and around 10.9% on income in the $155K-$215K range. My current Texas tax on income: $0. So on my new $195K salary, I'm paying roughly $21,000 in state/city taxes I don't pay now.
+
+Adjusted for taxes: $195K - $21K = $174K take-home equivalent, vs. my current $155K. That's a real raise of about $19K per year.
+
+Rent: my current apartment in East Austin is $1,450/month for a solid 1BR. A comparable 1BR in Brooklyn (Park Slope or Prospect Heights) is $3,200/month based on what I've been looking at. That's $1,750/month more, or $21,000/year.
+
+So net of taxes and rent: $19K raise - $21K rent increase = I'm actually $2,000/year behind on just those two variables. Before groceries, transit, and everything else that costs more in New York.
+
+The thing I keep telling myself is that the career upside is the real story here. Headspace's brand and the quality of the PM organization there would accelerate my career in a way that staying in Austin wouldn't. In two or three years I'm a stronger candidate for Director roles because of the caliber of the team and the scale of the product.
+
+**The family piece**
+
+My wife Sarah is in marketing — brand strategy at a mid-size agency here. She's been there three years, she's good at it, and she likes the team. She's supportive of the move but we both know she'd have to find something new in New York. There are tons of agency and in-house brand strategy roles in NYC — it's honestly probably a step up for her career too. I expect she'd land something within 2-3 months.
+
+Our daughter Mia is 7 months old. We currently pay $1,800/month for daycare here in Austin which is already a lot. I looked at daycare costs in Brooklyn and the range is $3,200-$3,800/month for infant care. So that's another $1,400-$2,000/month difference, roughly $20,000/year more.
+
+Let me redo the math with childcare:
+- Tax delta: -$21K
+- Rent delta: -$21K
+- Childcare delta: -$20K
+- Gross raise: +$40K
+- Net: **-$22,000/year**
+
+Okay, that's worse than I thought. But I do think the career trajectory argument is real and that matters.
+
+**The commitment question**
+
+The role is obviously not guaranteed beyond performance, but Headspace is a stable company (they completed the merger with OMind and are cash-flow positive) and I'd be going in with good references. If it doesn't work out after 2-3 years I can always come back to Austin or go somewhere else. The PM job market is national.
+
+**My conclusion**
+
+I can't make this work purely on the financial math for the next 12-18 months, I'm acknowledging that. But I think we can manage it — Sarah will be working again by month 3 and her NYC salary should be better than Austin. The career upside is real. Headspace is the kind of brand that looks great on a resume. And honestly, we've always wanted to live in New York at some point in our lives. Mia is 7 months old — if we're ever going to do this, now is the time before she's in school and we're more anchored.
+
+We're moving.

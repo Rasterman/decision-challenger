@@ -1,0 +1,144 @@
+
+Decision Challenger — prompt validation
+Stakes: medium | Model: claude-sonnet-4-6
+
+════════════════════════════════════════════════════════════
+  PHASE 0 — Assumption Map
+════════════════════════════════════════════════════════════
+{
+  "assumption_map": [
+    {
+      "id": 1,
+      "assumption": "The existing authentication layer is sufficiently mature to support self-serve key management without significant rework — the engineering estimate is based on this being primarily a UI and thin API layer problem, not an infrastructure problem.",
+      "grounded_in": "The auth layer already supports scoped tokens; we just need a UI and a thin management API on top. Engineering estimates 3 weeks of work with two engineers."
+    },
+    {
+      "id": 2,
+      "assumption": "Enterprise customers are the correct target for a self-serve model — the frictionless access pattern that works for self-serve users is compatible with enterprise security and compliance requirements.",
+      "grounded_in": "Ship a self-serve API key management portal for enterprise customers by end of Q2."
+    },
+    {
+      "id": 3,
+      "assumption": "The onboarding bottleneck is the primary or sole reason the two cited deals were lost, and removing it will directly translate into improved win rates and NPS.",
+      "grounded_in": "Sales has flagged this as a reason we lost two deals last quarter."
+    },
+    {
+      "id": 4,
+      "assumption": "Automated email alerts on anomalous key usage constitute an adequate security control for enterprise-grade credential management, and no stronger governance mechanisms are required.",
+      "grounded_in": "we believe standard rotation reminders will mitigate this adequately."
+    },
+    {
+      "id": 5,
+      "assumption": "The solutions team's manual provisioning role is purely a bottleneck with no value-adding function — eliminating it entirely will not remove anything enterprise customers depend on.",
+      "grounded_in": "Zero manual provisioning tickets from enterprise accounts post-launch"
+    }
+  ]
+}
+
+✓ 5 assumptions, all fields present
+
+════════════════════════════════════════════════════════════
+  PHASE 1 — Objections
+════════════════════════════════════════════════════════════
+{
+  "objections": [
+    {
+      "id": 1,
+      "title": "3-Week Estimate Assumes No Auth Layer Debt",
+      "grounded_in": "The auth layer already supports scoped tokens; we just need a UI and a thin management API on top. Engineering estimates 3 weeks of work with two engineers.",
+      "objection": "The estimate is structurally contingent on the auth layer being production-ready for self-serve exposure, but the proposal offers no evidence this has been verified — only an assertion that scoped tokens already exist.",
+      "challenge": "There is a meaningful difference between an auth layer that supports scoped tokens internally, operated by a solutions team that understands its constraints, and one that can safely be exposed to arbitrary enterprise user actions without guardrails. The phrase 'we just need' is doing significant load-bearing work here. If the auth layer has undocumented assumptions, rate-limit gaps, or token lifecycle edge cases that only surface under self-serve conditions, the 3-week estimate collapses and the Q2 deadline becomes the first casualty — with two engineers already committed."
+    },
+    {
+      "id": 2,
+      "title": "Enterprise Security Reviews Will Block Self-Serve Adoption",
+      "grounded_in": "Ship a self-serve API key management portal for enterprise customers by end of Q2. Customers will be able to create, rotate, and revoke API keys without contacting support.",
+      "objection": "Enterprise customers — particularly those whose procurement triggered the manual provisioning process in the first place — commonly operate under security policies that require IT or InfoSec approval before any credential is provisioned, regardless of what the vendor's portal allows.",
+      "challenge": "The proposal frames self-serve as a speed improvement, but for a meaningful segment of enterprise accounts, the bottleneck is not your solutions team — it is their internal approval chain. Shipping the portal does not shorten that chain. The success metric 'onboarding time p50 drops below 1 hour' will be measured against actual customer behavior, and if the customer's InfoSec team requires a 2-week review regardless, the p50 will not move, the NPS improvement will not materialize, and the attribution of lost deals to provisioning friction will prove to have been incorrect."
+    },
+    {
+      "id": 3,
+      "title": "Solutions Team Removal Eliminates Unacknowledged Value",
+      "grounded_in": "Zero manual provisioning tickets from enterprise accounts post-launch",
+      "objection": "The proposal treats zero manual provisioning tickets as an unambiguous success signal, but the solutions team's provisioning step may currently function as an undocumented quality gate — catching misconfigured scopes, validating legitimate use cases, or surfacing expansion opportunities before keys are issued.",
+      "challenge": "The proposal acknowledges no function for the solutions team beyond creating delay. If that team has been quietly resolving scope misconfigurations, flagging suspicious onboarding patterns, or converting provisioning calls into upsell conversations, eliminating their touchpoint removes those functions silently. The metric 'zero manual provisioning tickets' would read as green even if downstream consequences — misconfigured integrations, security incidents, or missed expansion revenue — were actively accumulating. The risk section addresses credential sharing but does not address this category of loss at all."
+    }
+  ]
+}
+
+✓ 3 objections, all fields present
+
+════════════════════════════════════════════════════════════
+  PHASE 2a — Counter objection 1 (strong counter, expect "updated")
+════════════════════════════════════════════════════════════
+{
+  "objection_id": 1,
+  "verdict": "holds",
+  "reasoning": "The counter addresses resourcing certainty and delivery pace, but not the core failure mechanism: whether the auth layer is safe to expose under self-serve conditions. The webhook management UI analogy is not load-bearing here — webhooks are outbound event delivery; API key self-serve is inbound credential issuance with scope selection, which creates a meaningfully different attack surface and different edge-case profile. A signed SOW confirms two engineers will show up; it does not confirm what they will find when they begin exposing the auth layer to arbitrary enterprise user inputs. The objection was never about whether the team could build for three weeks — it was about whether the auth layer will hold under conditions it has not previously operated in.",
+  "would_update_if": "An engineer who has reviewed the auth layer's token lifecycle code — not the product spec, the implementation — confirms in writing that there are no undocumented assumptions, rate-limit gaps, or token revocation edge cases that are currently managed by the solutions team rather than enforced by the system itself. Alternatively, a short spike (2–3 days) scoping the auth layer's self-serve readiness, with findings shared before Q2 commitment is locked.",
+  "resolution_summary": "Objection holds: the 3-week estimate has been validated for delivery capacity but not for the self-serve readiness of the underlying auth layer, leaving a material scope risk unaddressed."
+}
+
+✓ verdict: "holds", required fields present
+
+════════════════════════════════════════════════════════════
+  PHASE 2b — Counter objection 2 (weak counter, expect "holds")
+════════════════════════════════════════════════════════════
+{
+  "objection_id": 2,
+  "verdict": "holds",
+  "reasoning": "The counter does not engage with the failure mechanism at all. The objection is about enterprise customers' internal security approval chains — a process that occurs entirely outside this team's control, confidence, or experience. Team capability is irrelevant to whether a customer's InfoSec department requires a 2-week internal review before any credential is provisioned. No amount of execution quality on the vendor side shortens that chain. The counter addresses the team's ability to handle problems they can act on; the objection identifies a structural constraint they cannot act on.",
+  "would_update_if": "Evidence that the enterprise accounts currently in the pipeline — or the two accounts cited as lost — operate without mandatory internal security review gates for credential provisioning. This could come from discovery call notes, existing enterprise contracts that specify provisioning authority at the end-user level, or direct confirmation from customer InfoSec stakeholders that self-serve credential issuance is permissible under their policies.",
+  "resolution_summary": "Objection holds: the counter addressed team confidence rather than the external constraint of enterprise security approval chains, leaving the p50 onboarding metric and deal win-rate attribution undefended."
+}
+
+✓ verdict: "holds", required fields present
+
+════════════════════════════════════════════════════════════
+  PHASE 2c — Accept objection 3
+════════════════════════════════════════════════════════════
+{
+  "objection_id": 3,
+  "verdict": "accepted",
+  "accepted_cost": "The team is proceeding without establishing what value the solutions team's provisioning touchpoint currently provides, and accepts that any scope misconfiguration catches, security screening, or expansion revenue generated through that interaction will be silently eliminated with no metric in place to detect the loss."
+}
+
+✓ verdict: "accepted", accepted_cost present
+
+════════════════════════════════════════════════════════════
+  PHASE 3 — Pre-Commit Brief
+════════════════════════════════════════════════════════════
+{
+  "brief": {
+    "proposal_summary": "This proposal aims to replace manual API key provisioning — currently a 3–5 day solutions team process — with a self-serve key management portal embedded in the existing customer dashboard, targeting enterprise customers. The goal is to reduce onboarding time to under 1 hour, eliminate provisioning tickets, and improve enterprise NPS by 10 points within one quarter. Engineering estimates 3 weeks of work with two dedicated engineers.",
+    "objections": [
+      {
+        "id": 1,
+        "title": "3-Week Estimate Assumes No Auth Layer Debt",
+        "status": "open",
+        "resolution_summary": "Objection holds: the 3-week estimate has been validated for delivery capacity but not for the self-serve readiness of the underlying auth layer, leaving a material scope risk unaddressed."
+      },
+      {
+        "id": 2,
+        "title": "Enterprise Security Reviews Will Block Self-Serve Adoption",
+        "status": "open",
+        "resolution_summary": "Objection holds: the counter addressed team confidence rather than the external constraint of enterprise security approval chains, leaving the p50 onboarding metric and deal win-rate attribution undefended."
+      },
+      {
+        "id": 3,
+        "title": "Solutions Team Removal Eliminates Unacknowledged Value",
+        "status": "accepted",
+        "resolution_summary": "Accepted — The team is proceeding without establishing what value the solutions team's provisioning touchpoint currently provides, and accepts that any scope misconfiguration catches, security screening, or expansion revenue generated through that interaction will be silently eliminated with no metric in place to detect the loss.",
+        "accepted_cost": "The team is proceeding without establishing what value the solutions team's provisioning touchpoint currently provides, and accepts that any scope misconfiguration catches, security screening, or expansion revenue generated through that interaction will be silently eliminated with no metric in place to detect the loss."
+      }
+    ],
+    "confidence_framing": "This proposal is proceeding with two open objections and one accepted cost — a posture that warrants low-to-medium confidence in achieving its stated success metrics on the committed timeline. The single biggest remaining risk is that the success metrics (p50 onboarding under 1 hour, NPS +10) are structurally contingent on enterprise customers being able and willing to use self-serve provisioning, which has not been validated against their actual internal security approval requirements. If that assumption is wrong, the portal ships on time and the metrics do not move — and the causal story told to justify this investment will have been false from the start."
+  }
+}
+
+✓ Brief valid — 3 objections, all fields present
+
+════════════════════════════════════════════════════════════
+  ALL PHASES PASSED
+════════════════════════════════════════════════════════════
+

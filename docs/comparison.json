@@ -1,0 +1,71 @@
+{
+  "meta": {
+    "model": "claude-sonnet-4-6",
+    "stakes": "medium",
+    "document_title": "Launch Self-Serve API Keys for Enterprise Customers"
+  },
+  "document": "# Proposal: Launch Self-Serve API Keys for Enterprise Customers\n\n## Background\nCurrently, enterprise API access requires a manual provisioning step by our solutions team,\nwhich takes 3–5 business days and creates a bottleneck during onboarding. Sales has flagged\nthis as a reason we lost two deals last quarter.\n\n## Proposal\nShip a self-serve API key management portal for enterprise customers by end of Q2.\nCustomers will be able to create, rotate, and revoke API keys without contacting support.\nWe estimate this will reduce onboarding time from 5 days to under 1 hour.\n\n## Scope\n- API key CRUD UI embedded in the existing customer dashboard\n- Key scoping by resource type (read-only, write, admin)\n- Audit log of key creation and revocation events\n- Automated email alerts on key usage anomalies\n\n## Technical Approach\nThe auth layer already supports scoped tokens; we just need a UI and a thin management API\non top. Engineering estimates 3 weeks of work with two engineers.\n\n## Success Metrics\n- Onboarding time p50 drops below 1 hour within 60 days of launch\n- Zero manual provisioning tickets from enterprise accounts post-launch\n- NPS among enterprise accounts improves by 10 points within one quarter\n\n## Risks\nWe acknowledge there is some risk around key misuse if customers share credentials, but\nwe believe standard rotation reminders will mitigate this adequately.",
+  "conditions": {
+    "raw_claude": {
+      "prompt": "What are the strongest arguments against proceeding?",
+      "response": "## Strongest Arguments Against Proceeding\n\n### 1. Security Risk Analysis is Undercooked\nThe proposal dismisses credential misuse with a single sentence. This is the weakest part of the document. Self-serve key creation at enterprise scale introduces real attack surface:\n- **No mention of rate limiting** on key creation (can a compromised account generate thousands of keys?)\n- **No MFA requirement** before creating admin-scoped keys\n- **\"Anomaly alerts\" are reactive**, not preventive — damage may already be done before alerts fire\n- Enterprise customers often have complex IAM needs that rotation reminders don't address\n\n### 2. The Bottleneck May Be Valuable, Not Just Annoying\nThe manual provisioning step likely serves functions the proposal doesn't replace:\n- Solutions team probably validates use cases, sets appropriate rate limits, and ensures compliance requirements are met\n- Removing this touchpoint could increase support burden *downstream* when customers misconfigure scopes\n- It also represents a relationship-building moment with enterprise accounts that has sales value\n\n### 3. Success Metrics Are Weak Proxies\n- **\"Zero manual tickets\"** could mean the process is smooth *or* that customers have given up asking for help\n- **NPS within one quarter** is too short a window and will be confounded by other changes\n- No metric captures security incidents or misconfiguration rates, which are the actual downside risks\n\n### 4. The Lost Deals Claim Doesn't Fully Support the Proposal\nTwo lost deals is thin evidence for a Q2 deadline. Worth asking:\n- Were those deals lost *because of* onboarding speed, or was it a contributing factor among several?\n- Would a lighter solution (e.g., faster manual provisioning, a dedicated onboarding SLA) have retained them at lower risk?\n- Are enterprise prospects systematically blocked, or is this an outlier problem being over-indexed?\n\n### 5. Scope Creep and Timeline Risk\n- \"3 weeks with two engineers\" is stated without caveats, which is itself a red flag\n- Audit logging, anomaly detection, and scoped permissions are each non-trivial to do correctly\n- A rushed implementation of security-sensitive infrastructure is worse than the existing manual process\n\n### 6. Compliance Implications Are Unaddressed\nEnterprise customers are often subject to SOC 2, HIPAA, or similar frameworks. The proposal doesn't address:\n- Who is accountable when a self-provisioned key is involved in a data incident?\n- Whether audit logs meet evidentiary standards customers' compliance teams require\n- Whether customers' own IT/security teams need to approve or be notified of key creation\n\n---\n\n## Bottom Line\n\nThe proposal solves a real problem but treats security and compliance as footnotes. The strongest case against proceeding *as written* is that it trades a well-understood operational bottleneck for a poorly-characterized security and liability risk at the exact customer tier where incidents are most costly. A revised proposal with a proper threat model, compliance review, and more robust success metrics would be significantly stronger."
+    },
+    "light_prompt": {
+      "system_prompt": "You are a critical reviewer. When given a proposal, identify its three biggest weaknesses. Be direct. Ground each weakness in specific claims from the document rather than generic risks.",
+      "response": "## Three Biggest Weaknesses\n\n**1. The security risk section is dangerously thin.**\nThe proposal acknowledges credential misuse risk and dismisses it with \"rotation reminders\" — a mitigation that addresses the wrong threat vector. Sharing credentials isn't solved by reminders; it requires enforcement mechanisms like IP allowlisting, per-key rate limits, or MFA gates on key creation. For enterprise customers, a single compromised admin-scoped key could expose production data across the entire account. This isn't a minor caveat; it's a critical gap in a proposal specifically adding admin-level key permissions to self-serve access.\n\n**2. The engineering estimate is unsupported and likely undercooked.**\n\"3 weeks with two engineers\" is stated without any breakdown. The scope includes a CRUD UI, a management API, three permission tiers, an audit logging system, and anomaly detection with email alerting. Anomaly detection alone — defining baselines, building alerting logic, avoiding false positives — is non-trivial. There's no mention of testing, security review, or enterprise-specific requirements like SSO integration or role-based access controls that enterprise customers typically expect. The estimate reads as optimistic assertion, not scoped analysis.\n\n**3. The success metrics don't validate the core business claim.**\nThe proposal's stated justification is that two deals were lost last quarter due to provisioning delays. Yet none of the three metrics — onboarding time, ticket volume, or NPS — directly measure deal conversion or sales cycle improvement. If the real goal is to stop losing deals, the success criteria should include something like \"sales-cycle length for enterprise prospects\" or \"deal loss rate attributed to onboarding friction.\" As written, you could hit all three metrics and still lose the same deals for the same reasons."
+    },
+    "decision_challenger": {
+      "stakes": "medium",
+      "assumption_map": [
+        {
+          "id": 1,
+          "assumption": "The existing auth layer is sufficiently complete that only a UI and thin management API are needed — no significant backend work is required to support self-serve key management at enterprise scale.",
+          "grounded_in": "The auth layer already supports scoped tokens; we just need a UI and a thin management API on top."
+        },
+        {
+          "id": 2,
+          "assumption": "The 3–5 day manual provisioning delay is the primary reason for onboarding friction, and eliminating it will produce measurable improvements in deal conversion and NPS.",
+          "grounded_in": "Sales has flagged this as a reason we lost two deals last quarter."
+        },
+        {
+          "id": 3,
+          "assumption": "Enterprise customers can safely self-manage API key lifecycle — including creation, rotation, and revocation — without guardrails beyond rotation reminders and usage anomaly alerts.",
+          "grounded_in": "We acknowledge there is some risk around key misuse if customers share credentials, but we believe standard rotation reminders will mitigate this adequately."
+        },
+        {
+          "id": 4,
+          "assumption": "Two engineers working for three weeks is sufficient to deliver all scoped features — CRUD UI, key scoping, audit logs, and anomaly alerts — at production quality by end of Q2.",
+          "grounded_in": "Engineering estimates 3 weeks of work with two engineers."
+        },
+        {
+          "id": 5,
+          "assumption": "Eliminating manual provisioning tickets entirely is achievable, meaning enterprise customers will encounter no scenarios post-launch that require human intervention in key management.",
+          "grounded_in": "Zero manual provisioning tickets from enterprise accounts post-launch."
+        }
+      ],
+      "objections": [
+        {
+          "id": 1,
+          "title": "Thin API Estimate Hides Undiscovered Complexity",
+          "grounded_in": "The auth layer already supports scoped tokens; we just need a UI and a thin management API on top.",
+          "objection": "The 3-week estimate is predicated on the auth layer being production-ready for self-serve use, but 'supports scoped tokens' for internal provisioning and 'supports scoped tokens' for customer-facing self-serve key management are materially different threat and load profiles.",
+          "challenge": "Enterprise self-serve exposes key management operations directly to external actors at unknown scale — rate limiting, tenant isolation enforcement, and abuse surface hardening are not mentioned anywhere in scope. If any of these are not already present in the auth layer, they are not cosmetic additions; they are the work, and the 3-week estimate collapses. The proposal provides no evidence the auth layer has been audited against a self-serve threat model rather than an internal-provisioning one."
+        },
+        {
+          "id": 2,
+          "title": "Lost Deals May Not Be Solved by Speed Alone",
+          "grounded_in": "Sales has flagged this as a reason we lost two deals last quarter.",
+          "objection": "The proposal treats two lost deals as validated evidence that provisioning speed is the root cause of lost enterprise business, but 'flagged as a reason' is not the same as confirmed root cause — it is sales team attribution after the fact.",
+          "challenge": "If the actual blockers in those deals included pricing, feature gaps, or security review requirements that the manual provisioning process happened to surface, then shipping self-serve keys removes the symptom without addressing the cause. The success metrics — onboarding time and NPS — will not capture whether deal conversion improves, meaning the proposal could hit all its stated metrics and still fail to solve the problem it was justified by."
+        },
+        {
+          "id": 3,
+          "title": "Anomaly Alerts Cannot Substitute for Access Controls",
+          "grounded_in": "we believe standard rotation reminders will mitigate this adequately.",
+          "objection": "The proposal's entire security posture for credential misuse rests on rotation reminders and anomaly alerts — both of which are reactive and operate after a key has already been compromised or misused.",
+          "challenge": "For enterprise accounts, a single shared or leaked admin-scoped key could expose not just one customer's data but potentially cross-tenant data or write access to production resources. The proposal scopes keys to 'read-only, write, admin' levels but does not describe what an admin-scoped key can actually reach, nor what the blast radius of a leaked key is. Anomaly alerts notify after the fact; they do not constrain the damage window. The adequacy of rotation reminders as a mitigation is asserted, not demonstrated."
+        }
+      ]
+    }
+  }
+}

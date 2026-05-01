@@ -1,0 +1,55 @@
+{
+  "evaluated_at": "2026-05-01T18:18:55.142Z",
+  "cases": {
+    "house-phoenix-2006": {
+      "ground_truth_type": "structural",
+      "target_finding": "The document treats housing dip risk and job loss risk as independent with separate mitigations, but they are causally correlated — a housing crash in Phoenix would cause local job losses, making both mitigations fail simultaneously",
+      "raw_claude_verdict": "error",
+      "raw_claude_evidence": "{\n  \"verdict\": \"partial\",\n  \"evidence\": \"The scenario you're not allowing yourself to fully consider: Phoenix home prices fall 30% over the next 2-3 years (which happened; Ahwatukee specifically was hit hard in 2008-2011). You're deeply underwater. One of you has reduced income or job uncertainty. You have a toddler and childcare costs. Your $22K emergency fund is gone or depleted. You cannot sell, you cannot refinance, and you're paying $2,100+ a month on a house worth $200K.\"\n}\n\nThe response surfaces the correlation between housing market decline and employment/income risk converging in the same scenario, and implicitly shows that both the 5-year hold and dual-income mitigations fail simultaneously. However, it does not explicitly name these as mitigations being undermined, nor does it directly articulate that \"the 5-year hold plan fails under the same scenario as the income risk\" — the connection is implied rather than directly stated.",
+      "light_prompt_verdict": "partial",
+      "light_prompt_evidence": "The document touches on the correlation implicitly in weakness #1: 'The reasoning assumes the authors get to choose when they sell, but life events — job relocations, family illness, divorce — remove that choice.' This gestures at the idea that forced selling could coincide with a downturn, but it does not explicitly name employment risk in Phoenix or argue that the dual-income mitigation fails under the same scenario as the housing decline. The two risks are not explicitly linked as correlated failures.",
+      "decision_challenger_verdict": "partial",
+      "decision_challenger_evidence": "Objection 2 touches on the holding period failing due to life events: 'If Phoenix prices fall 30–40% and you need to sell in year three or four because one of those events occurs...' and mentions job relocation as a scenario. However, the response does not explicitly surface the correlation between a Phoenix housing market decline and employment risk — i.e., that a Phoenix-specific economic downturn would simultaneously cause home price declines AND job losses, making the dual-income mitigation (Assumption 2) fail under the exact same scenario as the price decline. The two risks are treated separately rather than as correlated failures driven by the same underlying cause."
+    },
+    "startup-offer-2019": {
+      "ground_truth_type": "factual",
+      "target_finding": "The fatal failure assumption that the founder identified in the postmortem appears as a stated strength in the candidate document — Decision Challenger should surface it as an objection grounded in the specific document claim",
+      "raw_claude_verdict": "yes",
+      "raw_claude_evidence": "The thing you're most excited about is the thing that killed the company... Staff attorneys who are the distribution mechanism have every reason to *slow* software adoption—each efficiency gain is an argument for fewer attorneys. You're building a product whose best salespeople benefit from its failure... The 'break-even math understates your actual risk': ~40% chance of significant return (let's say average 5x = $1.125M net of foregone comp) / ~60% chance of zero (meaning -$880K relative to staying) / Expected value: approximately **-$78K**... In a modest exit (say $150M), liquidation preferences could mean common shareholders receive substantially less than the headline math suggests. You'd want to understand the cap table structure, preference terms, and any participating preferred provisions before calculating what your 0.45% actually means at various exit scenarios.",
+      "light_prompt_verdict": "yes",
+      "light_prompt_evidence": "The author calculates he needs a $200M exit to break even, then describes this as merely requiring normal execution: 'Series A companies that hit $200M+ aren't exceptional — they're just the ones that execute.' This is empirically wrong. Most Series A companies do not reach $200M valuations at liquidity. More critically, the 0.45% figure is fully diluted *today*, before a Series B, Series C, secondary issuances, or an option pool refresh — all of which are near-certain if the company grows. A realistic exit scenario might leave him with 0.20–0.25% of a $200M outcome, not 0.45%, which means the actual break-even valuation is closer to $400M. He has done the arithmetic on the optimistic inputs and stopped there.",
+      "decision_challenger_verdict": "yes",
+      "decision_challenger_evidence": "Objection 1 directly challenges the go-to-market mechanism framed as a strength: 'The feature you find most compelling — staff attorneys as software evangelists — requires those attorneys to actively accelerate the automation of their own billable work. This is not an elegant alignment; it is a structural conflict that sits at the center of the business model.' And Objection 2 challenges the specific unit economics claim: 'Your break-even calculation counts only the salary delta, but you are also walking away from unvested Google RSUs... The actual comparison is not $885K foregone versus Atrium equity upside; it is closer to $1.2M–$1.5M in foregone certain value versus Atrium equity that requires a 4x exit just to break even. Your break-even valuation is almost certainly higher than $200M once this is fully modeled.'"
+    },
+    "mba-decision": {
+      "ground_truth_type": "analytical",
+      "target_finding": "The ROI calculation compares post-MBA salary against current salary rather than against projected salary without MBA — the counterfactual baseline error",
+      "raw_claude_verdict": "yes",
+      "raw_claude_evidence": "You model staying at $165-185K if you don't go. But you're a Series C fintech PM with five years of experience. The realistic upside path without an MBA—Staff PM, Director of Product, VP of Product at a growth-stage company—could put you at $220-280K+ with equity in 3-4 years. The MBA isn't being compared against staying flat; it should be compared against your actual alternative trajectory, which your analysis undersells.",
+      "light_prompt_verdict": "no",
+      "light_prompt_evidence": "",
+      "decision_challenger_verdict": "no",
+      "decision_challenger_evidence": ""
+    },
+    "relocation-austin-nyc": {
+      "ground_truth_type": "dependency",
+      "target_finding": "The partner's career impact is mentioned briefly and treated as independent of the relocation decision, but it is a correlated variable — if the partner cannot find equivalent work in NYC, the financial and lifestyle calculus changes materially",
+      "raw_claude_verdict": "yes",
+      "raw_claude_evidence": "The math assumes Sarah's salary compensates. You're treating her future NYC income as a buffer but haven't quantified it. If she earns $20K more in NYC, that changes the picture. If she earns $5K more, it doesn't. This is load-bearing in your reasoning and currently a placeholder.",
+      "light_prompt_verdict": "yes",
+      "light_prompt_evidence": "the 2-3 month job search estimate is presented as near-certain for a new mother relocating to a competitive market. If it takes 5-6 months, the household is absorbing the full -$22K deficit plus a complete loss of Sarah's current income during that window—a cash-flow problem the document never quantifies. The reasoning treats a best-case scenario as the base case.",
+      "decision_challenger_verdict": "yes",
+      "decision_challenger_evidence": "You are already running -$22,000/year at full dual income. The 'month 3' timeline for Sarah's re-employment is stated as an expectation, not a plan — there is no evidence in what you've written that she has begun a NYC job search, has leads, or has a realistic read on how competitive the brand strategy market is for someone relocating without a network there. A 2-3 month job search is optimistic for a senior brand strategy hire in a new city with no existing agency relationships, especially when the candidate is also managing an infant through a cross-country move. If Sarah takes 5-6 months — not an outlier outcome — the household absorbs an additional $15,000-$25,000 income hole on top of the -$22,000 annual deficit you already calculated. You have implicitly made the financial viability of this decision contingent on a job search timeline you have no control over and have done no visible work to validate."
+    },
+    "baby-timing": {
+      "ground_truth_type": "framing_bias",
+      "target_finding": "The document frames \"wait\" as the costless default requiring no justification, while \"now\" requires justification — but waiting has real costs including fertility probability changes, housing timing, and opportunity costs that are not modeled",
+      "raw_claude_verdict": "error",
+      "raw_claude_evidence": "{\n  \"verdict\": \"partial\",\n  \"evidence\": \"The second risk is more real but depends on assumptions you haven't locked in: how far apart you want the kids, whether you'd be flexible on spacing, and how you'd weigh a 37-year-old second pregnancy against other factors. If you're treating 'I want two kids close together' as fixed, waiting is more costly.\"\n\nThe response touches on fertility-related costs of waiting but does not frame this as an assumption mapping exercise identifying that 'waiting preserves current options' is treated as a costless default. The fertility costs are partially surfaced but not systematically identified as hidden costs of the waiting default.\"\n}",
+      "light_prompt_verdict": "partial",
+      "light_prompt_evidence": "The fertility risk is systematically underweighted given the stated goal of two children... Starting at 34 with the first child and targeting a second at 36-37 puts the second conception in a meaningfully different IVF success rate bracket... The analysis raises this, labels it real, then pivots away without resolving it.",
+      "decision_challenger_verdict": "yes",
+      "decision_challenger_evidence": "Assumption 5: \"'Waiting' is the active choice that requires justification, while 'now' carries the burden of disruption — and this framing accurately reflects the relative costs of each option.\" Grounded in: \"I frame 'wait' as the responsible, sensible choice and 'now' as something that needs justification. But I'm not sure that framing is neutral.\" And further in Objection 2: \"The urgency calculus changes entirely once you account for wanting two children... the margin you believe you have at 32 is actually the margin for the entire two-child plan. Describing the fertility risk as 'not urgent' is only accurate if you are willing to hold the second child loosely.\""
+    }
+  }
+}

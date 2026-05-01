@@ -1,0 +1,485 @@
+{
+  "meta": {
+    "model": "claude-sonnet-4-6",
+    "stakes": "high",
+    "runs": 3,
+    "document_title": "startup-offer-2019.txt"
+  },
+  "document": "# The Atrium Offer — Do I Take It?\n\n# Note on sourcing: Atrium LTS raised a $10.5M Series A in 2018, pivoted, and shut down in March 2020.\n# Justin Kan's postmortem (published March 2020) identified the core failure assumption as:\n# lawyers would adopt workflow software that automated their work, when in fact the hybrid\n# law-firm model created structural misalignment — staff attorneys resisted automation that\n# threatened their own roles. This is the \"strength\" embedded in the document below.\n\nI've been at Google for six years. L5, on the Maps team, total comp right now is about $385,000 — base is $195K, the rest is bonus and RSU vest. It's good. I'm comfortable. Maybe too comfortable.\n\nAtrium reached out three months ago and I've been in their process since then. They're building legal workflow software specifically for startups — contract review, equity management, employment agreements. Justin Kan is the founder. They raised a $10.5M Series A from Andreessen a16z. Post-money valuation is around $50M. They want me as their third engineering hire, which is head of engineering in practice.\n\n**The offer**\n\nBase: $165,000 (I'm taking a $30K salary haircut to join)\nEquity: 0.45% fully diluted, 4-year vest with 1-year cliff\nOptions strike price: $0.42/share\nCurrent 409A: $0.42/share\n\nSo the equity is underwater in real terms until there's a liquidity event. At the current $50M valuation, my 0.45% is worth $225,000 on paper. If they hit $200M (4x), it's $900K. If they hit $500M it's $2.25M. If it goes to zero, which most startups do, it's zero.\n\n**Why I'm actually excited about this**\n\nThe thing that gets me is the go-to-market insight. They're not just selling software — they're a hybrid: actual staff attorneys plus technology. Clients get legal services AND get the benefit of proprietary software that gets better as more clients use it. This is the wedge that traditional legal tech companies have missed. The staff attorneys are the distribution mechanism — they're already embedded in the client relationship, so they're the ones who evangelize the software, get feedback, and drive adoption. It's really elegant.\n\nThe market is enormous. Every startup needs legal services. The Y Combinator network alone is thousands of companies that all need employment agreements, cap table management, equity documents. Atrium's pitch to startups is: why pay $400/hour at a traditional firm when you can get the same quality work from attorneys who are also building the software that makes them more efficient, and you pay a flat monthly retainer? Justin has said they're targeting $1B ARR within five years. I believe it.\n\n**The comp math**\n\nI'm giving up $220K/year in comp (difference between $385K and $165K salary). Over four years that's $880K in foregone guaranteed income. To break even on the equity (ignoring time value of money), I need the company to hit roughly $200M valuation at liquidity. That's a 4x from today's $50M post-money.\n\nHonestly, 4x feels achievable for a company that has this level of product-market clarity, this team, and this investor. Series A companies that hit $200M+ aren't exceptional — they're just the ones that execute. And I'd be the person most responsible for the technical execution.\n\n**What worries me**\n\nThe market timing feels right but the regulatory piece is something I don't fully understand. Legal services are regulated at the state level and the \"lawyer working at a software company\" model is unusual. I've asked about this and they've said it's structured correctly, but I haven't done independent diligence on it.\n\nThe other thing is I'd be leaving a team I love and a product used by a billion people for something that might not work. That's just startup risk and I've accepted it.\n\n**My gut**\n\nI think I'd regret not taking this more than I'd regret taking it and it failing. I've been at a big company for six years and I know what the next six years look like if I stay — more of the same, incrementally more comp, incrementally more scope. The Atrium opportunity is the kind of thing that comes around once every few years. Justin Kan sold Twitch for $970 million. He knows what he's doing.\n\nI'm going to accept the offer.",
+  "runs": [
+    {
+      "run": 1,
+      "assumption_map": [
+        {
+          "id": 1,
+          "assumption": "The hybrid model — staff attorneys embedded with clients who also evangelize the software — is a durable competitive advantage rather than an internal structural tension between attorney incentives and automation.",
+          "grounded_in": "The staff attorneys are the distribution mechanism — they're already embedded in the client relationship, so they're the ones who evangelize the software, get feedback, and drive adoption. It's really elegant."
+        },
+        {
+          "id": 2,
+          "assumption": "A 4x valuation increase to ~$200M is a realistic and achievable baseline outcome, not an optimistic one, making the equity compensation sufficient to justify the $880K in foregone income.",
+          "grounded_in": "Series A companies that hit $200M+ aren't exceptional — they're just the ones that execute. And I'd be the person most responsible for the technical execution."
+        },
+        {
+          "id": 3,
+          "assumption": "The regulatory risk of the hybrid law-firm-plus-software model is real but contained, and the company has already resolved it correctly.",
+          "grounded_in": "I've asked about this and they've said it's structured correctly, but I haven't done independent diligence on it."
+        },
+        {
+          "id": 4,
+          "assumption": "Justin Kan's track record with Twitch is meaningful signal that he will execute well in the legal tech space, which has fundamentally different dynamics.",
+          "grounded_in": "Justin Kan sold Twitch for $970 million. He knows what he's doing."
+        },
+        {
+          "id": 5,
+          "assumption": "Staying at Google represents stagnation, making the comparison between the two paths a choice between growth and comfortable decline rather than between two legitimate career trajectories.",
+          "grounded_in": "I know what the next six years look like if I stay — more of the same, incrementally more comp, incrementally more scope."
+        }
+      ],
+      "objections": [
+        {
+          "id": 1,
+          "title": "Staff attorneys will resist the automation they deliver",
+          "grounded_in": "The staff attorneys are the distribution mechanism — they're already embedded in the client relationship, so they're the ones who evangelize the software, get feedback, and drive adoption.",
+          "objection": "The model you describe as elegant requires staff attorneys to actively promote software that makes their own labor more efficient — which, in a legal services context, means software that reduces billable hours and, eventually, headcount. You are treating attorney incentives and software adoption incentives as aligned when they are structurally opposed.",
+          "challenge": "In professional services firms, productivity software that threatens practitioner roles is routinely sandbagged, underused, or subtly discredited to clients — not out of bad faith, but because the practitioners absorb the downside of automation while the company captures the upside. The distribution mechanism you find most compelling is staffed entirely by people whose long-term career interest is to slow that mechanism down. If attorney adoption is lukewarm or adversarial, the feedback loop breaks, the software stagnates, and the wedge that differentiates Atrium from traditional legal tech disappears."
+        },
+        {
+          "id": 2,
+          "title": "Break-even math excludes compounding and option tax exposure",
+          "grounded_in": "I'm giving up $220K/year in comp... Over four years that's $880K in foregone guaranteed income. To break even on the equity (ignoring time value of money), I need the company to hit roughly $200M valuation at liquidity.",
+          "objection": "You have explicitly excluded time value of money from your break-even analysis and made no mention of the tax treatment of exercising stock options — two factors that materially raise the actual bar for this equity to make you whole.",
+          "challenge": "ISOs exercised at a spread trigger AMT; NSOs are taxed as ordinary income at exercise regardless of whether you have cash from a sale. If the 409A rises and you exercise before a liquidity event, you may owe tens of thousands of dollars in taxes on value you cannot yet access. Separately, $880K in guaranteed Google comp invested conservatively over four years is not worth $880K in four years — it is worth considerably more, which means the 4x target you describe as your break-even is actually your floor before accounting for opportunity cost of capital. The math you have accepted as honest is systematically understated."
+        },
+        {
+          "id": 3,
+          "title": "Regulatory risk is load-bearing and unverified",
+          "grounded_in": "I've asked about this and they've said it's structured correctly, but I haven't done independent diligence on it.",
+          "objection": "The hybrid model's legality — a software company employing attorneys who provide legal services — is not a peripheral compliance checkbox. It is the structural core of the business model, and you have accepted the company's own assurance as sufficient diligence on an existential question.",
+          "challenge": "State bar unauthorized practice of law rules vary significantly and have been used to shut down or force restructuring of legal tech companies with less aggressive models than Atrium's. If a state bar challenges the structure, the staff attorney model — the exact thing you find most compelling — is the first thing that has to change or unwind. You would be joining as head of engineering at a company whose primary product-market insight may not survive regulatory scrutiny in its largest markets, and you have done no independent verification of this. 'They said it's structured correctly' is what every company says before a bar association disagrees."
+        },
+        {
+          "id": 4,
+          "title": "Regret framing masks avoidance of Google stagnation",
+          "grounded_in": "I think I'd regret not taking this more than I'd regret taking it and it failing... I've been at a big company for six years and I know what the next six years look like if I stay — more of the same, incrementally more comp, incrementally more scope.",
+          "objection": "The stated motivation is excitement about Atrium's model and upside, but the language you use to describe staying at Google — 'too comfortable,' 'more of the same,' 'incrementally more' — describes a push away from Google as much as a pull toward Atrium. These are different decisions with different risk profiles.",
+          "challenge": "A decision driven primarily by wanting to leave Google will survive Atrium failing, but it will not survive Atrium being the wrong vehicle for that exit. If the real need is agency, scope, and escape from a trajectory that feels predetermined, then the question is not 'Atrium or Google' — it is 'Atrium or something else.' You have not shown that you evaluated other options: founding something, joining a later-stage company with better equity economics, or moving teams internally. The regret calculus you have constructed assumes only two paths exist, which conveniently forecloses the harder question of whether this specific company, at this specific risk level, is the right way to solve the problem you actually have."
+        }
+      ]
+    },
+    {
+      "run": 2,
+      "assumption_map": [
+        {
+          "id": 1,
+          "assumption": "The hybrid model — staff attorneys embedded in client relationships who also evangelize the software — creates a durable competitive advantage rather than an internal structural conflict.",
+          "grounded_in": "The staff attorneys are the distribution mechanism — they're already embedded in the client relationship, so they're the ones who evangelize the software, get feedback, and drive adoption."
+        },
+        {
+          "id": 2,
+          "assumption": "A 4x valuation increase to ~$200M is the realistic baseline for a break-even outcome, and Series A companies with this profile routinely achieve it.",
+          "grounded_in": "Series A companies that hit $200M+ aren't exceptional — they're just the ones that execute. And I'd be the person most responsible for the technical execution."
+        },
+        {
+          "id": 3,
+          "assumption": "Justin Kan's track record with Twitch is meaningful signal that he can execute in the legal services space.",
+          "grounded_in": "Justin Kan sold Twitch for $970 million. He knows what he's doing."
+        },
+        {
+          "id": 4,
+          "assumption": "The regulatory and unauthorized practice of law risks are real but have been adequately handled by the company's legal structuring.",
+          "grounded_in": "I've asked about this and they've said it's structured correctly, but I haven't done independent diligence on it."
+        },
+        {
+          "id": 5,
+          "assumption": "The foregone compensation of $880K over four years is the correct and complete measure of financial sacrifice, and the equity upside is a realistic offset.",
+          "grounded_in": "I'm giving up $220K/year in comp (difference between $385K and $165K salary). Over four years that's $880K in foregone guaranteed income."
+        }
+      ],
+      "objections": [
+        {
+          "id": 1,
+          "title": "Staff attorneys will resist the automation core to the model",
+          "grounded_in": "The staff attorneys are the distribution mechanism — they're already embedded in the client relationship, so they're the ones who evangelize the software, get feedback, and drive adoption.",
+          "objection": "The hybrid model's core mechanic requires staff attorneys to actively promote software that makes their own roles more efficient — which is a polite way of saying software that reduces the hours they bill and, ultimately, the headcount required to serve clients. You have identified the distribution insight as the thing that excites you most, but you have not identified who bears the cost of that insight working as intended.",
+          "challenge": "If the software succeeds at automating contract review and equity management, the staff attorneys become more productive per client — which means fewer attorneys are needed for the same revenue, or the same attorneys serve far more clients at lower unit cost. The attorneys know this. The incentive to evangelize a tool that threatens their own employment is structurally absent, not merely a culture problem that good management can solve. The elegant distribution mechanism you've described is also a principal-agent conflict at the center of the business model — and it is the single assumption on which your excitement most depends."
+        },
+        {
+          "id": 2,
+          "title": "Regulatory risk is load-bearing and you have not verified it",
+          "grounded_in": "I've asked about this and they've said it's structured correctly, but I haven't done independent diligence on it.",
+          "objection": "You have accepted the company's own assurance that a novel, state-by-state regulated structure is legally sound, without independent verification — and you are about to take an $880K compensation haircut on the strength of that assurance.",
+          "challenge": "The unauthorized practice of law is not a civil liability risk that can be settled quietly — it is a licensing and bar association enforcement risk that can result in forced restructuring, loss of the ability to operate in key states, or dissolution of the law firm entity entirely. If the regulatory structure is challenged after you join, the equity you traded $880K to acquire could be wiped out by a legal determination that has nothing to do with engineering execution. You explicitly named this as something you don't fully understand, which means you are not in a position to evaluate whether their assurance is credible — and you are about to commit anyway."
+        },
+        {
+          "id": 3,
+          "title": "Foregone comp math understates the actual financial exposure",
+          "grounded_in": "Over four years that's $880K in foregone guaranteed income. To break even on the equity (ignoring time value of money), I need the company to hit roughly $200M valuation at liquidity.",
+          "objection": "The $880K figure captures only the base salary delta. It excludes the RSU vesting you will forfeit at Google, the option value of future Google equity grants over four years, and the compounding career capital of continued L5-to-L6 progression — and it explicitly ignores time value of money, which is not a minor rounding error when the median time to liquidity for a Series A company exceeds seven years.",
+          "challenge": "Your current $385K package almost certainly includes a multi-year RSU vest schedule with tranches you will not collect if you leave now. Those are not future hypotheticals — they are already-granted compensation you are forfeiting. The actual break-even calculation is likely $1.1M–$1.4M in total foregone compensation over four years, which means the company needs to reach not $200M but closer to $250M–$300M for you to be financially neutral — before accounting for the liquidity timeline, option exercise costs, and the tax treatment of ISO spreads. The math you presented is the most optimistic version of the math."
+        },
+        {
+          "id": 4,
+          "title": "\"I'd regret not taking it\" is avoidance framing, not opportunity framing",
+          "grounded_in": "I think I'd regret not taking this more than I'd regret taking it and it failing. I've been at a big company for six years and I know what the next six years look like if I stay — more of the same, incrementally more comp, incrementally more scope.",
+          "objection": "The primary stated motivation for accepting this offer is not that Atrium is the best available opportunity — it is that staying at Google feels stagnant. These are different decisions, and conflating them hides the actual driver.",
+          "challenge": "\"I know what the next six years look like\" is a description of Google, not an evaluation of Atrium. A person who is genuinely excited about Atrium's specific opportunity would be stress-testing the model, doing independent regulatory diligence, and asking hard questions about attorney incentive alignment. Instead, the document spends more energy on the discomfort of staying than on the rigor of joining. That asymmetry matters: decisions made primarily to escape a current situation systematically overweight the value of the exit and underweight the risks of the destination. If the specific concerns above resolve badly, will you be glad you left Google — or will you have traded six years of security for a failed startup and a gap in your resume at the moment when L6 was within reach?"
+        }
+      ]
+    },
+    {
+      "run": 3,
+      "assumption_map": [
+        {
+          "id": 1,
+          "assumption": "The hybrid model — staff attorneys embedded in client relationships who evangelize the software — is a distribution and adoption advantage, not a structural vulnerability. The attorneys will willingly drive software adoption because their interests and the company's interests are aligned.",
+          "grounded_in": "The staff attorneys are the distribution mechanism — they're already embedded in the client relationship, so they're the ones who evangelize the software, get feedback, and drive adoption. It's really elegant."
+        },
+        {
+          "id": 2,
+          "assumption": "A 4x valuation increase to ~$200M is a reasonable base-case outcome for a Series A company with this team, investor, and market, making the equity compensation a credible offset to the salary sacrifice.",
+          "grounded_in": "Series A companies that hit $200M+ aren't exceptional — they're just the ones that execute. And I'd be the person most responsible for the technical execution."
+        },
+        {
+          "id": 3,
+          "assumption": "The regulatory structure of the hybrid law firm / software company model has been correctly designed and poses no material legal or licensing risk to the business model.",
+          "grounded_in": "I've asked about this and they've said it's structured correctly, but I haven't done independent diligence on it."
+        },
+        {
+          "id": 4,
+          "assumption": "Justin Kan's track record — specifically the Twitch acquisition — is predictive of his ability to execute in a heavily regulated, operationally complex, services-plus-software business.",
+          "grounded_in": "Justin Kan sold Twitch for $970 million. He knows what he's doing."
+        },
+        {
+          "id": 5,
+          "assumption": "The foregone compensation is the primary financial cost of this decision, and the math has been adequately stress-tested by comparing the four-year salary delta against equity upside scenarios.",
+          "grounded_in": "I'm giving up $220K/year in comp (difference between $385K and $165K salary). Over four years that's $880K in foregone guaranteed income."
+        }
+      ],
+      "objections": [
+        {
+          "id": 1,
+          "title": "Staff attorneys will resist, not evangelize, automation",
+          "grounded_in": "The staff attorneys are the distribution mechanism — they're already embedded in the client relationship, so they're the ones who evangelize the software, get feedback, and drive adoption.",
+          "objection": "The elegance you describe depends entirely on staff attorneys acting as enthusiastic internal salespeople for software that automates their own billable work. This is the assumption — not the strength.",
+          "challenge": "Staff attorneys at a hybrid firm are salaried legal professionals whose career identity and job security are tied to doing legal work, not replacing it. The more effective the software becomes, the more directly it threatens the headcount justification for their roles. You have described a distribution model whose human components have a structural incentive to slow-walk, underuse, or quietly resist the very product they are supposed to champion — and you have called this the wedge that traditional legal tech companies have missed, when it may be precisely the failure mode they already encountered."
+        },
+        {
+          "id": 2,
+          "title": "Regulatory risk is unverified and potentially existential",
+          "grounded_in": "I've asked about this and they've said it's structured correctly, but I haven't done independent diligence on it.",
+          "objection": "You are accepting a $30K salary cut and betting $880K in foregone income on a business model whose legal permissibility you have explicitly not verified independently.",
+          "challenge": "The unauthorized practice of law is a state-by-state regulatory minefield, and the hybrid model — attorneys employed by or affiliated with a software company that charges clients flat retainers — sits directly in the territory that state bar associations have historically moved to shut down or restructure. 'They said it's structured correctly' is the answer a founder gives; it is not due diligence. If a state bar association determines the structure constitutes fee-splitting or unlicensed practice, the core business model does not need to pivot — it needs to stop. This is not a generic startup risk; it is a specific, named concern you already identified and then explicitly declined to resolve before deciding to accept."
+        },
+        {
+          "id": 3,
+          "title": "Foregone comp math understates actual financial exposure",
+          "grounded_in": "I'm giving up $220K/year in comp (difference between $385K and $165K salary). Over four years that's $880K in foregone guaranteed income.",
+          "objection": "Your break-even analysis compares salary figures but omits the RSU vesting schedule at Google, which means the real cost of leaving now may be substantially higher than $880K depending on where you are in your current vest cycle.",
+          "challenge": "At $385K total comp with $195K base, approximately $190K annually is coming from bonus and RSU vests. RSUs at Google typically vest on a quarterly or annual schedule with a cliff already passed at L5 — leaving mid-cycle means forfeiting unvested shares that could represent one to two years of equity value, potentially $200–380K in additional unearned compensation on top of the four-year salary delta. Your break-even calculation treats this decision as starting from zero, but it is actually starting from a specific point in a vesting schedule. The real cost of this decision may be $1M to $1.3M in foregone guaranteed value, which pushes your true break-even from a 4x to something closer to a 5–6x outcome."
+        },
+        {
+          "id": 4,
+          "title": "Twitch success is not transferable evidence here",
+          "grounded_in": "Justin Kan sold Twitch for $970 million. He knows what he's doing.",
+          "objection": "You are treating a single prior exit in a consumer internet business as predictive competence in a regulated professional services market — these are categorically different execution environments.",
+          "challenge": "Twitch was a consumer live-streaming platform that succeeded on network effects, content, and an Amazon acquisition thesis — none of which require navigating state bar regulations, managing licensed professionals, or selling into a deeply risk-averse enterprise buyer (startup legal counsel). The skills that produced a Twitch exit are real, but they are largely orthogonal to what Atrium requires: understanding legal service delivery economics, managing attorney culture, and operating within a regulated industry that actively polices its boundaries. 'He knows what he's doing' is doing significant load-bearing work in your decision, and it is grounded in a data point from a fundamentally different business."
+        }
+      ]
+    }
+  ],
+  "analysis": {
+    "language_variance_score": {
+      "value": 0,
+      "unit": "percentage points",
+      "interpretation": "No difference — keyword and semantic clustering agree",
+      "keyword_consistency_rate": 60,
+      "semantic_consistency_rate": 60
+    },
+    "raw": {
+      "method": "keyword overlap — titles sharing ≥1 non-stop word are grouped",
+      "clusters": [
+        {
+          "representative_title": "Staff attorneys will resist the automation they deliver",
+          "matched_titles": [
+            "Staff attorneys will resist the automation they deliver",
+            "Staff attorneys will resist the automation core to the model",
+            "Staff attorneys will resist, not evangelize, automation"
+          ],
+          "appeared_in_runs": [
+            1,
+            2,
+            3
+          ],
+          "appeared_in_count": 3
+        },
+        {
+          "representative_title": "Break-even math excludes compounding and option tax exposure",
+          "matched_titles": [
+            "Break-even math excludes compounding and option tax exposure",
+            "Foregone comp math understates the actual financial exposure",
+            "Foregone comp math understates actual financial exposure"
+          ],
+          "appeared_in_runs": [
+            1,
+            2,
+            3
+          ],
+          "appeared_in_count": 3
+        },
+        {
+          "representative_title": "Regulatory risk is load-bearing and unverified",
+          "matched_titles": [
+            "Regulatory risk is load-bearing and unverified",
+            "Regulatory risk is load-bearing and you have not verified it",
+            "Regulatory risk is unverified and potentially existential"
+          ],
+          "appeared_in_runs": [
+            1,
+            2,
+            3
+          ],
+          "appeared_in_count": 3
+        },
+        {
+          "representative_title": "Regret framing masks avoidance of Google stagnation",
+          "matched_titles": [
+            "Regret framing masks avoidance of Google stagnation",
+            "\"I'd regret not taking it\" is avoidance framing, not opportunity framing"
+          ],
+          "appeared_in_runs": [
+            1,
+            2
+          ],
+          "appeared_in_count": 2
+        },
+        {
+          "representative_title": "Twitch success is not transferable evidence here",
+          "matched_titles": [
+            "Regulatory risk is load-bearing and you have not verified it",
+            "\"I'd regret not taking it\" is avoidance framing, not opportunity framing",
+            "Staff attorneys will resist, not evangelize, automation",
+            "Twitch success is not transferable evidence here"
+          ],
+          "appeared_in_runs": [
+            2,
+            3
+          ],
+          "appeared_in_count": 2
+        }
+      ],
+      "consistent_across_all_runs": [
+        {
+          "representative_title": "Staff attorneys will resist the automation they deliver",
+          "matched_titles": [
+            "Staff attorneys will resist the automation they deliver",
+            "Staff attorneys will resist the automation core to the model",
+            "Staff attorneys will resist, not evangelize, automation"
+          ],
+          "appeared_in_runs": [
+            1,
+            2,
+            3
+          ],
+          "appeared_in_count": 3
+        },
+        {
+          "representative_title": "Break-even math excludes compounding and option tax exposure",
+          "matched_titles": [
+            "Break-even math excludes compounding and option tax exposure",
+            "Foregone comp math understates the actual financial exposure",
+            "Foregone comp math understates actual financial exposure"
+          ],
+          "appeared_in_runs": [
+            1,
+            2,
+            3
+          ],
+          "appeared_in_count": 3
+        },
+        {
+          "representative_title": "Regulatory risk is load-bearing and unverified",
+          "matched_titles": [
+            "Regulatory risk is load-bearing and unverified",
+            "Regulatory risk is load-bearing and you have not verified it",
+            "Regulatory risk is unverified and potentially existential"
+          ],
+          "appeared_in_runs": [
+            1,
+            2,
+            3
+          ],
+          "appeared_in_count": 3
+        }
+      ],
+      "appeared_in_some_runs": [
+        {
+          "representative_title": "Regret framing masks avoidance of Google stagnation",
+          "matched_titles": [
+            "Regret framing masks avoidance of Google stagnation",
+            "\"I'd regret not taking it\" is avoidance framing, not opportunity framing"
+          ],
+          "appeared_in_runs": [
+            1,
+            2
+          ],
+          "appeared_in_count": 2
+        },
+        {
+          "representative_title": "Twitch success is not transferable evidence here",
+          "matched_titles": [
+            "Regulatory risk is load-bearing and you have not verified it",
+            "\"I'd regret not taking it\" is avoidance framing, not opportunity framing",
+            "Staff attorneys will resist, not evangelize, automation",
+            "Twitch success is not transferable evidence here"
+          ],
+          "appeared_in_runs": [
+            2,
+            3
+          ],
+          "appeared_in_count": 2
+        }
+      ],
+      "unique_to_one_run": []
+    },
+    "deduplicated": {
+      "method": "semantic grouping via Claude — same underlying concern regardless of phrasing",
+      "clusters": [
+        {
+          "canonical_title": "Staff attorneys will resist the automation",
+          "titles": [
+            "Staff attorneys will resist the automation they deliver",
+            "Staff attorneys will resist the automation core to the model",
+            "Staff attorneys will resist, not evangelize, automation"
+          ],
+          "runs": [
+            1,
+            2,
+            3
+          ],
+          "appeared_in_count": 3
+        },
+        {
+          "canonical_title": "Regulatory risk is unverified and load-bearing",
+          "titles": [
+            "Regulatory risk is load-bearing and unverified",
+            "Regulatory risk is load-bearing and you have not verified it",
+            "Regulatory risk is unverified and potentially existential"
+          ],
+          "runs": [
+            1,
+            2,
+            3
+          ],
+          "appeared_in_count": 3
+        },
+        {
+          "canonical_title": "Foregone comp math understates true financial exposure",
+          "titles": [
+            "Break-even math excludes compounding and option tax exposure",
+            "Foregone comp math understates the actual financial exposure",
+            "Foregone comp math understates actual financial exposure"
+          ],
+          "runs": [
+            1,
+            2,
+            3
+          ],
+          "appeared_in_count": 3
+        },
+        {
+          "canonical_title": "Regret framing masks avoidance of real risk",
+          "titles": [
+            "Regret framing masks avoidance of Google stagnation",
+            "\"I'd regret not taking it\" is avoidance framing, not opportunity framing"
+          ],
+          "runs": [
+            1,
+            2
+          ],
+          "appeared_in_count": 2
+        },
+        {
+          "canonical_title": "Twitch success is not transferable evidence",
+          "titles": [
+            "Twitch success is not transferable evidence here"
+          ],
+          "runs": [
+            3
+          ],
+          "appeared_in_count": 1
+        }
+      ],
+      "consistent_across_all_runs": [
+        {
+          "canonical_title": "Staff attorneys will resist the automation",
+          "titles": [
+            "Staff attorneys will resist the automation they deliver",
+            "Staff attorneys will resist the automation core to the model",
+            "Staff attorneys will resist, not evangelize, automation"
+          ],
+          "runs": [
+            1,
+            2,
+            3
+          ],
+          "appeared_in_count": 3
+        },
+        {
+          "canonical_title": "Regulatory risk is unverified and load-bearing",
+          "titles": [
+            "Regulatory risk is load-bearing and unverified",
+            "Regulatory risk is load-bearing and you have not verified it",
+            "Regulatory risk is unverified and potentially existential"
+          ],
+          "runs": [
+            1,
+            2,
+            3
+          ],
+          "appeared_in_count": 3
+        },
+        {
+          "canonical_title": "Foregone comp math understates true financial exposure",
+          "titles": [
+            "Break-even math excludes compounding and option tax exposure",
+            "Foregone comp math understates the actual financial exposure",
+            "Foregone comp math understates actual financial exposure"
+          ],
+          "runs": [
+            1,
+            2,
+            3
+          ],
+          "appeared_in_count": 3
+        }
+      ],
+      "appeared_in_some_runs": [
+        {
+          "canonical_title": "Regret framing masks avoidance of real risk",
+          "titles": [
+            "Regret framing masks avoidance of Google stagnation",
+            "\"I'd regret not taking it\" is avoidance framing, not opportunity framing"
+          ],
+          "runs": [
+            1,
+            2
+          ],
+          "appeared_in_count": 2
+        }
+      ],
+      "unique_to_one_run": [
+        {
+          "canonical_title": "Twitch success is not transferable evidence",
+          "titles": [
+            "Twitch success is not transferable evidence here"
+          ],
+          "runs": [
+            3
+          ],
+          "appeared_in_count": 1
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,458 @@
+{
+  "meta": {
+    "model": "claude-sonnet-4-6",
+    "stakes": "high",
+    "runs": 3,
+    "document_title": "house-phoenix-2006.txt"
+  },
+  "document": "# Should We Buy the House on Clearwater Drive?\n\nWe've been going back and forth on this for three months and I think we need to just write it out and make a decision.\n\nThe basics: we found a 4BR/2BA in Ahwatukee for $289,000. We've been renting a 2BR apartment for $1,100/month for the past four years and with a baby on the way it's not going to work anymore. The sellers are at $295K and we think we can get them to $289K or maybe $285K.\n\n**Why the numbers look right to us**\n\nPhoenix has been on an incredible run. Median home prices here went from around $130K in 2002 to roughly $260K by the end of 2005 — basically doubling in three years. The real estate agent showed us comps and the Ahwatukee market specifically has been strong. Even if you assume appreciation slows down significantly from the recent pace, holding for 5+ years should mean we come out ahead versus renting.\n\nAt $289K with 10% down, we're looking at a $260,100 30-year fixed mortgage. The rate we're pre-approved for is 6.25%, which puts our PITI at roughly $2,100/month. That's almost double our current rent, but we're also getting a lot more space and building equity instead of paying someone else's mortgage.\n\nThe loan officer also quoted us an ARM — 5/1 at 4.75% with a 2% annual cap and 5% lifetime cap. That would get us to around $1,750/month for the first five years. We're leaning toward the fixed because we're planning to stay long-term and we don't love the uncertainty, but we keep coming back to how much lower the monthly payment would be.\n\n**Our income situation**\n\nCombined we're at $142,000 — I'm a civil engineer at a firm that does municipal infrastructure contracts ($84K), and my wife works in hospital administration at Banner Health ($58K). We've been saving aggressively and have $45K in the down payment fund. Emergency fund is about $22K separate from that.\n\nHere's the part that makes us feel okay about the payment: even if one of us loses a job, we can cover the mortgage on a single income. At $2,100/month on my $84K salary, that's 30% of gross — high but manageable. On her $58K salary it would be tight (43% of gross) but we could do it for a few months while the other one found something. Phoenix's job market has been strong — the population grew by about 45,000 people last year alone, which keeps driving demand for municipal contracts and healthcare services.\n\n**What concerns us**\n\nThe price appreciation has been fast. We know that. The thing that's nagging me is whether we're buying near a peak. But honestly, every year for the past four years people have said the Phoenix market is overheated and every year it went up more. If we wait another year and prices climb another 8-10%, we've missed even more.\n\nThe risk I do take seriously is a housing dip. If prices fall 10-15% after we buy, that would be painful on paper, but we plan to hold for at least five to seven years, so any temporary dip resolves before we'd need to sell. We're not speculators flipping houses — we need a place to live and we're going to live there regardless of what the market does year to year.\n\nThe other risk is job loss. But as I laid out above, the single-income scenario works for either of us at the 30-year fixed rate, and Phoenix's economy has enough diversification (healthcare, construction, government, some tech) that both of us losing work at the same time is a very remote scenario.\n\n**What we're telling ourselves**\n\nWe've been waiting for the \"right time\" for four years and we have a baby coming in October. The apartment won't work. Even if we're buying at a slight premium relative to some hypothetical future correction, we're buying a home we plan to live in for a long time, and the alternative is renting for $1,100 with no equity accumulation and another lease renewal in January.\n\nWe're going to make an offer this week. Writing this out actually helped. The math works, we can handle the payments, we have a cushion, and we're buying for the right reasons.",
+  "runs": [
+    {
+      "run": 1,
+      "assumption_map": [
+        {
+          "id": 1,
+          "assumption": "Phoenix home prices will not fall significantly, or if they do, the decline will be temporary and recover within the 5–7 year holding window — making the purchase safe to execute at current prices.",
+          "grounded_in": "\"If prices fall 10-15% after we buy, that would be painful on paper, but we plan to hold for at least five to seven years, so any temporary dip resolves before we'd need to sell.\""
+        },
+        {
+          "id": 2,
+          "assumption": "Both incomes will remain available and stable enough that the household can sustain the $2,100/month PITI payment — and even in a single-income scenario, the situation is temporary and manageable.",
+          "grounded_in": "\"even if one of us loses a job, we can cover the mortgage on a single income... we could do it for a few months while the other one found something\""
+        },
+        {
+          "id": 3,
+          "assumption": "The $22K emergency fund will remain sufficient as a buffer after the down payment is deployed, including through the period surrounding the birth of a child and its associated new expenses.",
+          "grounded_in": "\"Emergency fund is about $22K separate from that\" and \"we have a baby on the way\""
+        },
+        {
+          "id": 4,
+          "assumption": "The cost of ownership is adequately captured by the PITI figure of $2,100/month, making the affordability analysis reliable.",
+          "grounded_in": "\"our PITI at roughly $2,100/month... The math works, we can handle the payments, we have a cushion\""
+        },
+        {
+          "id": 5,
+          "assumption": "The decision to buy now versus continuing to rent is driven by genuine necessity — the apartment is no longer viable — rather than by accumulated pressure, timing anxiety, or a desire to stop deliberating.",
+          "grounded_in": "\"We've been waiting for the 'right time' for four years and we have a baby coming in October... Writing this out actually helped.\""
+        }
+      ],
+      "objections": [
+        {
+          "id": 1,
+          "title": "Phoenix price run is a bubble, not a trend",
+          "grounded_in": "\"Phoenix has been on an incredible run. Median home prices here went from around $130K in 2002 to roughly $260K by the end of 2005 — basically doubling in three years.\"",
+          "objection": "The doubling of Phoenix prices in three years is cited as evidence the market is strong, but that trajectory is itself the warning sign — it is the profile of a speculative bubble, not organic demand-driven appreciation. The '10–15% dip' scenario used to stress-test the decision almost certainly understates the realistic downside.",
+          "challenge": "A market that doubles in three years on the back of loose credit, investor speculation, and population inflow does not correct by 10–15% — it corrects by 40–60%, as Phoenix specifically did between 2006 and 2011. At $289K, a 40% decline puts the home at $173K against a $260K mortgage balance, producing deep negative equity that a 5–7 year hold does not resolve if the recovery takes a decade. The framing of 'temporary dip' assumes mean reversion to current prices, but if current prices are the anomaly, there is no mean to revert to."
+        },
+        {
+          "id": 2,
+          "title": "True ownership cost is materially understated",
+          "grounded_in": "\"our PITI at roughly $2,100/month... The math works, we can handle the payments, we have a cushion\"",
+          "objection": "The affordability analysis stops at PITI, but ownership of a 4BR house carries ongoing costs — maintenance, repairs, HOA if applicable, utilities on a larger footprint, and appliance replacement — that are structurally absent from the budget model presented.",
+          "challenge": "A standard rule of thumb is 1–2% of home value annually in maintenance and repair costs alone, which on a $289K house is $2,900–$5,800 per year, or $240–$480/month on top of PITI. That shifts the real monthly cost to $2,340–$2,580 before any other ownership overhead. Combined with a simultaneous income compression event — a new baby arriving in October, which typically reduces a household's effective income for 12–24 months through leave, childcare costs, or reduced hours — the stated cushion of $22K emergency fund may be consumed within the first year of ownership without any market disruption at all."
+        },
+        {
+          "id": 3,
+          "title": "Single-income resilience assumption ignores timing",
+          "grounded_in": "\"even if one of us loses a job, we can cover the mortgage on a single income... we could do it for a few months while the other one found something. Phoenix's job market has been strong\"",
+          "objection": "The single-income stress test is evaluated against current Phoenix labor market conditions, but the scenario most likely to cause a job loss — a regional economic contraction — is precisely the scenario in which Phoenix's job market would no longer be strong.",
+          "challenge": "Municipal infrastructure contracts, the source of the $84K income, are directly downstream of local government budgets, which contract sharply during housing downturns as property tax revenue falls. Banner Health's administration headcount is similarly sensitive to a regional economic slowdown. The two income streams are not as independent as they appear — both are substantially correlated with the health of the Phoenix economy. If the housing market corrects severely, the probability of a job loss event does not stay remote; it rises precisely when the household is most financially exposed and least able to sell."
+        },
+        {
+          "id": 4,
+          "title": "Decision fatigue is driving the timeline, not necessity",
+          "grounded_in": "\"We've been waiting for the 'right time' for four years... Writing this out actually helped... We're going to make an offer this week.\"",
+          "objection": "The document presents the baby's arrival as the forcing function for this decision, but the language of the conclusion — relief at having written it out, the four-year framing of waiting, the immediate commitment to offer this week — signals that decision fatigue and psychological closure are doing significant work in pushing this forward.",
+          "challenge": "A baby arriving in October does not require closing on a house this week — it requires more space, which could be addressed by leasing a larger apartment or short-term rental while the market is evaluated further. The actual constraint being resolved by buying now is the discomfort of prolonged indecision, not the physical impossibility of the apartment. At high financial stakes, conflating 'we are tired of waiting' with 'we must act now' is a known failure mode — and the document's own language ('Writing this out actually helped') suggests the memo is functioning as permission to stop deliberating rather than as genuine analysis."
+        }
+      ]
+    },
+    {
+      "run": 2,
+      "assumption_map": [
+        {
+          "id": 1,
+          "assumption": "Phoenix home prices will not fall significantly, or if they do, any decline will be temporary and will recover within their 5–7 year holding window.",
+          "grounded_in": "\"If prices fall 10-15% after we buy, that would be painful on paper, but we plan to hold for at least five to seven years, so any temporary dip resolves before we'd need to sell.\""
+        },
+        {
+          "id": 2,
+          "assumption": "Both incomes will remain stable, and if one is lost, the other is sufficient to carry the mortgage while the unemployed partner finds new work quickly.",
+          "grounded_in": "\"even if one of us loses a job, we can cover the mortgage on a single income... we could do it for a few months while the other one found something.\""
+        },
+        {
+          "id": 3,
+          "assumption": "The past four years of continuous appreciation are evidence that prices will continue to rise or hold, making waiting costlier than buying now.",
+          "grounded_in": "\"every year for the past four years people have said the Phoenix market is overheated and every year it went up more. If we wait another year and prices climb another 8-10%, we've missed even more.\""
+        },
+        {
+          "id": 4,
+          "assumption": "The financial model is complete: $45K down payment, $22K emergency fund, and $2,100/month PITI are the key figures, and the household can absorb the transition from $1,100 rent to $2,100 mortgage without material strain.",
+          "grounded_in": "\"At $289K with 10% down, we're looking at a $260,100 30-year fixed mortgage... PITI at roughly $2,100/month. That's almost double our current rent.\""
+        },
+        {
+          "id": 5,
+          "assumption": "Having a baby on the way is a genuine constraint that makes action necessary now — the apartment is not a viable option, so the choice is effectively between this house and some other house, not between buying and waiting.",
+          "grounded_in": "\"we have a baby coming in October. The apartment won't work... the alternative is renting for $1,100 with no equity accumulation and another lease renewal in January.\""
+        }
+      ],
+      "objections": [
+        {
+          "id": 1,
+          "title": "Assumed 10–15% floor on downside risk",
+          "grounded_in": "\"The risk I do take seriously is a housing dip. If prices fall 10-15% after we buy, that would be painful on paper\"",
+          "objection": "The document treats a 10–15% price decline as the serious downside scenario and dismisses it as survivable given the long hold. But Phoenix's price run — from $130K to $260K median in three years — is consistent with the profile of markets that have experienced 40–60% corrections, not 10–15% ones.",
+          "challenge": "A 40% decline from $289K puts the home at roughly $173K, against a remaining mortgage balance in the low $250s after a few years of payments — a six-figure underwater position that cannot be resolved by 'holding.' At that depth, holding is not a choice: selling becomes impossible without a short sale or foreclosure, refinancing becomes impossible, and the $22K emergency fund is consumed by carrying costs well before any recovery. The document stress-tests the wrong number."
+        },
+        {
+          "id": 2,
+          "title": "True monthly cost is materially understated",
+          "grounded_in": "\"our PITI at roughly $2,100/month. That's almost double our current rent\"",
+          "objection": "PITI is not the full cost of homeownership, and the document treats it as though it is. A 4BR/2BA home in Ahwatukee will carry maintenance, repair, HOA fees if applicable, and higher utilities — costs that renters largely do not bear.",
+          "challenge": "The standard rule of thumb is 1–2% of home value annually for maintenance alone, which on a $289K home is $2,900–$5,800 per year, or $240–$480 per month — on top of PITI. The real monthly cost of this home is likely $2,350–$2,600, not $2,100. This distinction matters because the single-income stress test is built on the $2,100 figure: at 43% of gross on the wife's $58K salary, the payment is already described as 'tight.' Adding $300–$500 in ownership costs pushes the single-income scenario from 'tight but manageable' to genuinely precarious, particularly in the first year when a newborn adds its own cost load."
+        },
+        {
+          "id": 3,
+          "title": "Baby timing makes this less reversible than stated",
+          "grounded_in": "\"we have a baby coming in October. The apartment won't work... We're going to make an offer this week.\"",
+          "objection": "The document frames the baby's arrival as a reason to act, but it is also a reason the return path is harder than described. Closing, moving, and absorbing a newborn within the same compressed window removes the ability to pause, reassess, or back out if circumstances change.",
+          "challenge": "If the home inspection surfaces problems, if the mortgage terms shift at closing, or if either partner's employment situation changes between now and October, the practical ability to walk away is much lower than it would be without an infant arriving simultaneously. The document treats urgency as a reason to commit; it does not account for how the same urgency eliminates the option value of waiting. A deal that goes sideways in August — during pregnancy — or in November — with a newborn — is not the same as a deal that goes sideways in a normal period. The cost of a bad outcome here is compounded by the timing, not just the housing market."
+        },
+        {
+          "id": 4,
+          "title": "Avoidance framing disguised as opportunity framing",
+          "grounded_in": "\"We've been waiting for the 'right time' for four years... Writing this out actually helped. The math works, we can handle the payments, we have a cushion, and we're buying for the right reasons.\"",
+          "objection": "The document opens by acknowledging three months of indecision, invokes four years of missed timing, and closes by self-certifying that the reasoning is sound — all of which are markers of a decision being driven by decision fatigue and deadline pressure, not by the underlying analysis.",
+          "challenge": "The phrase 'buying for the right reasons' is self-asserted, not demonstrated. The actual drivers visible in the document are: exhaustion with waiting, a hard deadline created by the baby, fear of further price increases, and the social and emotional weight of four years of renting. These are not illegitimate — but they are avoidance and pressure, not opportunity. A decision made under this motivational structure tends to anchor on reasons to proceed and discount reasons to pause. The document's treatment of the downside — 10–15% dip, manageable; job loss, remote; overheated market, people have been wrong before — reads as motivated reasoning applied to each concern in sequence, not an honest accounting of compounded risk."
+        }
+      ]
+    },
+    {
+      "run": 3,
+      "assumption_map": [
+        {
+          "id": 1,
+          "assumption": "Phoenix home prices, even if they slow, will not fall materially — any dip will be temporary and will recover within a 5–7 year holding window.",
+          "grounded_in": "\"If prices fall 10-15% after we buy, that would be painful on paper, but we plan to hold for at least five to seven years, so any temporary dip resolves before we'd need to sell.\""
+        },
+        {
+          "id": 2,
+          "assumption": "Both incomes are stable enough that the single-income-failure scenario is the realistic stress case, and simultaneous job loss is remote enough to be dismissed.",
+          "grounded_in": "\"both of us losing work at the same time is a very remote scenario\""
+        },
+        {
+          "id": 3,
+          "assumption": "The household's financial position — $45K down payment, $22K emergency fund — is adequate to absorb the transition to homeownership including all costs at close and early carrying costs with a newborn.",
+          "grounded_in": "\"Emergency fund is about $22K separate from that.\""
+        },
+        {
+          "id": 4,
+          "assumption": "The recent price appreciation trend is evidence of durable demand, not speculative excess — the fundamentals (population growth, job market) justify current price levels.",
+          "grounded_in": "\"Phoenix has been on an incredible run. Median home prices here went from around $130K in 2002 to roughly $260K by the end of 2005 — basically doubling in three years.\""
+        },
+        {
+          "id": 5,
+          "assumption": "Wife's income remains fully available through and after the pregnancy — her $58K salary is treated as a stable ongoing input to the household financial model.",
+          "grounded_in": "\"my wife works in hospital administration at Banner Health ($58K)\""
+        }
+      ],
+      "objections": [
+        {
+          "id": 1,
+          "title": "Price doubling in three years signals bubble, not demand",
+          "grounded_in": "\"Median home prices here went from around $130K in 2002 to roughly $260K by the end of 2005 — basically doubling in three years.\"",
+          "objection": "The price trajectory you cite as evidence that Phoenix is a sound market is itself the primary indicator that Phoenix may be in a speculative bubble. A 100% price increase in three years is not a sign of durable demand — it is the signature pattern of asset price inflation driven by loose credit and speculative buying.",
+          "challenge": "Your stress case assumes a 10–15% correction, but markets that double in three years on the back of loose lending do not characteristically correct by 10–15% — they correct by 40–60%, and they do so quickly. Phoenix specifically will turn out to be one of the hardest-hit metros in the United States during the 2008 collapse, with prices falling over 50% from peak. Your holding period assumption only protects you if prices recover within 5–7 years; a correction of that magnitude took Phoenix over a decade to recover. You are not stress-testing a dip — you are stress-testing a decade underwater."
+        },
+        {
+          "id": 2,
+          "title": "Wife's income assumption ignores imminent maternity disruption",
+          "grounded_in": "\"my wife works in hospital administration at Banner Health ($58K)\" and \"we have a baby coming in October\"",
+          "objection": "Your financial model treats your wife's $58K as a continuous input, but a baby arriving in October means her income will be interrupted or reduced precisely in the months immediately following closing, which is when your cash reserves will already be drawn down by transaction costs and move-in expenses.",
+          "challenge": "The document never names what maternity leave looks like — paid, unpaid, partial, how long. If she takes 8–12 weeks of unpaid or partially paid leave, your household cashflow drops by $10,000–$15,000 at the exact moment you are absorbing a mortgage payment nearly double your current rent, one-time closing costs of roughly $8,000–$10,000, and the capital expenses of setting up a home and a newborn. Your $22K emergency fund is not a buffer against risk at that point — it is already spoken for by the near-certain costs of the next six months."
+        },
+        {
+          "id": 3,
+          "title": "Avoidance of lease renewal is driving this, not the numbers",
+          "grounded_in": "\"We've been waiting for the 'right time' for four years and we have a baby coming in October. The apartment won't work... the alternative is renting for $1,100 with no equity accumulation and another lease renewal in January.\"",
+          "objection": "The closing paragraph reveals that the primary driver of this decision is deadline pressure — a lease renewal in January and a baby in October — not a genuine conclusion that the financial case is sound. The phrase 'writing this out actually helped' follows a section where you acknowledged the market may be at a peak and chose to dismiss it.",
+          "challenge": "Every risk you name — bubble, job loss, payment stretch — is resolved in the document by returning to the same anchor: 'we need a place to live and we can't stay in the apartment.' That is a real constraint, but it is not the same as the numbers working. It is entirely possible to need more space, have a baby coming, and still be making a financially dangerous purchase. The urgency of the housing need is being used to foreclose scrutiny of the purchase itself, when the correct response to that urgency might be a larger rental, not a $289,000 mortgage commitment at a potential market peak."
+        },
+        {
+          "id": 4,
+          "title": "Post-close liquidity is not stress-tested against realistic costs",
+          "grounded_in": "\"Emergency fund is about $22K separate from that.\"",
+          "objection": "The $22K emergency fund is presented as a meaningful cushion, but it has not been modeled against the actual near-term cash demands of closing, a new home, and a newborn simultaneously.",
+          "challenge": "Closing costs on a $289K purchase will run $8,000–$10,000 out of pocket. First-time homeownership routinely surfaces $3,000–$8,000 in immediate repair, appliance, or setup costs in year one that renters do not carry. Newborn costs — even with insurance — add $3,000–$5,000 in the first year in out-of-pocket medical, equipment, and childcare expenses. These are not emergency scenarios; they are near-certainties. Before any actual emergency occurs, your $22K buffer is likely already at $5,000–$8,000 or gone. At that point, you are one car repair or one month of income disruption away from carrying credit card debt on top of a mortgage you described as 'tight' on a single income."
+        }
+      ]
+    }
+  ],
+  "analysis": {
+    "language_variance_score": {
+      "value": 80,
+      "unit": "percentage points",
+      "interpretation": "+80pp — model is rephrasing the same concerns across runs (semantic reliability)",
+      "keyword_consistency_rate": 20,
+      "semantic_consistency_rate": 100
+    },
+    "raw": {
+      "method": "keyword overlap — titles sharing ≥1 non-stop word are grouped",
+      "clusters": [
+        {
+          "representative_title": "Single-income resilience assumption ignores timing",
+          "matched_titles": [
+            "Single-income resilience assumption ignores timing",
+            "Baby timing makes this less reversible than stated",
+            "Wife's income assumption ignores imminent maternity disruption"
+          ],
+          "appeared_in_runs": [
+            1,
+            2,
+            3
+          ],
+          "appeared_in_count": 3
+        },
+        {
+          "representative_title": "Phoenix price run is a bubble, not a trend",
+          "matched_titles": [
+            "Phoenix price run is a bubble, not a trend",
+            "Decision fatigue is driving the timeline, not necessity",
+            "Price doubling in three years signals bubble, not demand",
+            "Avoidance of lease renewal is driving this, not the numbers",
+            "Post-close liquidity is not stress-tested against realistic costs"
+          ],
+          "appeared_in_runs": [
+            1,
+            3
+          ],
+          "appeared_in_count": 2
+        },
+        {
+          "representative_title": "True ownership cost is materially understated",
+          "matched_titles": [
+            "True ownership cost is materially understated",
+            "True monthly cost is materially understated"
+          ],
+          "appeared_in_runs": [
+            1,
+            2
+          ],
+          "appeared_in_count": 2
+        },
+        {
+          "representative_title": "Avoidance framing disguised as opportunity framing",
+          "matched_titles": [
+            "Avoidance framing disguised as opportunity framing",
+            "Avoidance of lease renewal is driving this, not the numbers"
+          ],
+          "appeared_in_runs": [
+            2,
+            3
+          ],
+          "appeared_in_count": 2
+        },
+        {
+          "representative_title": "Assumed 10–15% floor on downside risk",
+          "matched_titles": [
+            "Assumed 10–15% floor on downside risk"
+          ],
+          "appeared_in_runs": [
+            2
+          ],
+          "appeared_in_count": 1
+        }
+      ],
+      "consistent_across_all_runs": [
+        {
+          "representative_title": "Single-income resilience assumption ignores timing",
+          "matched_titles": [
+            "Single-income resilience assumption ignores timing",
+            "Baby timing makes this less reversible than stated",
+            "Wife's income assumption ignores imminent maternity disruption"
+          ],
+          "appeared_in_runs": [
+            1,
+            2,
+            3
+          ],
+          "appeared_in_count": 3
+        }
+      ],
+      "appeared_in_some_runs": [
+        {
+          "representative_title": "Phoenix price run is a bubble, not a trend",
+          "matched_titles": [
+            "Phoenix price run is a bubble, not a trend",
+            "Decision fatigue is driving the timeline, not necessity",
+            "Price doubling in three years signals bubble, not demand",
+            "Avoidance of lease renewal is driving this, not the numbers",
+            "Post-close liquidity is not stress-tested against realistic costs"
+          ],
+          "appeared_in_runs": [
+            1,
+            3
+          ],
+          "appeared_in_count": 2
+        },
+        {
+          "representative_title": "True ownership cost is materially understated",
+          "matched_titles": [
+            "True ownership cost is materially understated",
+            "True monthly cost is materially understated"
+          ],
+          "appeared_in_runs": [
+            1,
+            2
+          ],
+          "appeared_in_count": 2
+        },
+        {
+          "representative_title": "Avoidance framing disguised as opportunity framing",
+          "matched_titles": [
+            "Avoidance framing disguised as opportunity framing",
+            "Avoidance of lease renewal is driving this, not the numbers"
+          ],
+          "appeared_in_runs": [
+            2,
+            3
+          ],
+          "appeared_in_count": 2
+        }
+      ],
+      "unique_to_one_run": [
+        {
+          "representative_title": "Assumed 10–15% floor on downside risk",
+          "matched_titles": [
+            "Assumed 10–15% floor on downside risk"
+          ],
+          "appeared_in_runs": [
+            2
+          ],
+          "appeared_in_count": 1
+        }
+      ]
+    },
+    "deduplicated": {
+      "method": "semantic grouping via Claude — same underlying concern regardless of phrasing",
+      "clusters": [
+        {
+          "canonical_title": "Phoenix market price growth signals bubble",
+          "titles": [
+            "Phoenix price run is a bubble, not a trend",
+            "Assumed 10–15% floor on downside risk",
+            "Price doubling in three years signals bubble, not demand"
+          ],
+          "runs": [
+            1,
+            2,
+            3
+          ],
+          "appeared_in_count": 3
+        },
+        {
+          "canonical_title": "True all-in monthly cost is understated",
+          "titles": [
+            "True ownership cost is materially understated",
+            "True monthly cost is materially understated",
+            "Post-close liquidity is not stress-tested against realistic costs"
+          ],
+          "runs": [
+            1,
+            2,
+            3
+          ],
+          "appeared_in_count": 3
+        },
+        {
+          "canonical_title": "Wife's income loss risk ignored or understated",
+          "titles": [
+            "Single-income resilience assumption ignores timing",
+            "Baby timing makes this less reversible than stated",
+            "Wife's income assumption ignores imminent maternity disruption"
+          ],
+          "runs": [
+            1,
+            2,
+            3
+          ],
+          "appeared_in_count": 3
+        },
+        {
+          "canonical_title": "Decision is avoidance-driven, not opportunity-driven",
+          "titles": [
+            "Decision fatigue is driving the timeline, not necessity",
+            "Avoidance framing disguised as opportunity framing",
+            "Avoidance of lease renewal is driving this, not the numbers"
+          ],
+          "runs": [
+            1,
+            2,
+            3
+          ],
+          "appeared_in_count": 3
+        }
+      ],
+      "consistent_across_all_runs": [
+        {
+          "canonical_title": "Phoenix market price growth signals bubble",
+          "titles": [
+            "Phoenix price run is a bubble, not a trend",
+            "Assumed 10–15% floor on downside risk",
+            "Price doubling in three years signals bubble, not demand"
+          ],
+          "runs": [
+            1,
+            2,
+            3
+          ],
+          "appeared_in_count": 3
+        },
+        {
+          "canonical_title": "True all-in monthly cost is understated",
+          "titles": [
+            "True ownership cost is materially understated",
+            "True monthly cost is materially understated",
+            "Post-close liquidity is not stress-tested against realistic costs"
+          ],
+          "runs": [
+            1,
+            2,
+            3
+          ],
+          "appeared_in_count": 3
+        },
+        {
+          "canonical_title": "Wife's income loss risk ignored or understated",
+          "titles": [
+            "Single-income resilience assumption ignores timing",
+            "Baby timing makes this less reversible than stated",
+            "Wife's income assumption ignores imminent maternity disruption"
+          ],
+          "runs": [
+            1,
+            2,
+            3
+          ],
+          "appeared_in_count": 3
+        },
+        {
+          "canonical_title": "Decision is avoidance-driven, not opportunity-driven",
+          "titles": [
+            "Decision fatigue is driving the timeline, not necessity",
+            "Avoidance framing disguised as opportunity framing",
+            "Avoidance of lease renewal is driving this, not the numbers"
+          ],
+          "runs": [
+            1,
+            2,
+            3
+          ],
+          "appeared_in_count": 3
+        }
+      ],
+      "appeared_in_some_runs": [],
+      "unique_to_one_run": []
+    }
+  }
+}

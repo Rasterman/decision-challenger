@@ -1,0 +1,444 @@
+{
+  "meta": {
+    "model": "claude-sonnet-4-6",
+    "stakes": "high",
+    "runs": 3,
+    "document_title": "baby-timing.txt"
+  },
+  "document": "# Now or in Two Years: The Timing Question\n\n# Note on data: NYC infant daycare $2,800-4,000/mo (Care.com NYC 2024 survey).\n# 1BR to 2BR in NYC: $800-1,200/mo rent increase (StreetEasy 2024).\n# Fertility data: at 32, ~85-90% cumulative pregnancy rate within 12 months of trying.\n# At 34, ~78-80%. IVF success rate age 32: ~40-45% per cycle. Age 35+: ~30-35% per cycle.\n# (CDC ART national summary 2022, SART data.)\n\nMy husband James and I have been circling this question for about a year. We keep saying \"we'll decide soon\" and then not deciding. So I'm writing this out.\n\nI'm 32, he's 33. We've been married four years. We live in a 1BR in Brooklyn (Crown Heights). We both want kids — that's not the question. The question is whether we try now or wait about two years.\n\n**The case for waiting**\n\nI'm 18 months away from what looks like a fairly certain promotion to VP of Product at my company. My manager has said explicitly that I'm \"on track\" and the organizational structure supports it. The timing matters because VP-level at my company comes with significantly better equity refresh grants and a base jump from $175K to approximately $220-230K. That's $45-55K more per year. The equity component is meaningful — we're Series D and there's a path to liquidity in the next 3-4 years.\n\nIf I go on leave during the 18-month runway to the VP role, I'm not sure what that does to the promotion timeline. It probably delays it. Officially it wouldn't, and legally my company can't hold it against me, but realistically the visibility matters and the projects I'm running now are what my case is built on.\n\nTwo years also gives us time to save more money. We have about $55K in savings right now. By waiting two years we'd have closer to $110-120K depending on expenses. That matters because childcare in NYC is genuinely shocking — I've been told to expect $3,200-3,800/month for infant care, which is basically another rent payment. And we'd almost certainly need to move from our 1BR to a 2BR, which is probably $900-1,000 more per month in our neighborhood.\n\nSo the financial cost of a baby in year one is something like:\n- Childcare: $3,500/month = $42,000/year\n- Rent increase: $950/month = $11,400/year\n- All the other stuff: probably $8-10K/year\n\nCall it $60,000/year in new costs. That's real money and waiting two years to accumulate more savings and get the promotion first makes genuine sense.\n\n**The case for not waiting**\n\nI keep coming back to a few things.\n\nThe first is that we both want more than one child. If we wait two years to start, I'm 34 when we have the first. If we want a second child two to three years after that, I'm 36 or 37. I've read enough to know that fertility doesn't fall off a cliff at 35, but it does change. IVF success rates drop meaningfully between 32 and 37. The honest answer is that waiting two years compresses everything if we want two kids.\n\nThe second is that the \"promotion first\" logic has a flaw I can see but keep setting aside. What if we wait two years and something changes at the company? What if I get the promotion and then something happens that makes me want to leave anyway? I'm building my timing around an organizational outcome I don't fully control.\n\nThe third thing is harder to articulate. There's a version of this where we just keep waiting. When the timing is \"right.\" And I'm aware of couples who did that, and some of them are fine and some of them are not.\n\n**What I notice about how I'm thinking about this**\n\nI frame \"wait\" as the responsible, sensible choice and \"now\" as something that needs justification. But I'm not sure that framing is neutral. Waiting feels controlled and deliberate. Having a baby now feels like giving something up or accepting disruption. But the disruption is coming either way — in two years or now.\n\nJames is more \"now\" than I am. He thinks we'll figure it out, that we always do, and that the window we're in right now at 32 and 33 is good. He's not wrong that financially we could manage it — tight for a year, then okay once the childcare costs decrease as kids get older. He also thinks I'm slightly overweighting the VP promotion as a fixed thing with a fixed date, when actually careers are flexible and I could have other opportunities.\n\n**Where I actually am**\n\nI don't know. I genuinely don't know. The financial case for waiting is solid. The career case for waiting is real but not certain. The fertility case for not waiting is real but not urgent at 32. The emotional case — I don't entirely trust my emotional read right now because I've been inside this question for so long that it's hard to see it clearly.\n\nI think I want to wait. But I notice I can't fully articulate what I'm waiting for.",
+  "runs": [
+    {
+      "run": 1,
+      "assumption_map": [
+        {
+          "id": 1,
+          "assumption": "The VP promotion is sufficiently certain and timed precisely enough to be a reliable anchor for the two-year waiting plan — specifically, that the 18-month runway, the salary jump, and the equity grant will materialize roughly as described.",
+          "grounded_in": "\"18 months away from what looks like a fairly certain promotion to VP of Product... My manager has said explicitly that I'm 'on track' and the organizational structure supports it.\""
+        },
+        {
+          "id": 2,
+          "assumption": "Going on parental leave during the promotion runway would meaningfully delay or jeopardize the VP outcome — that visibility and project continuity are genuinely determinative of the promotion decision, not just incidental.",
+          "grounded_in": "\"If I go on leave during the 18-month runway to the VP role, I'm not sure what that does to the promotion timeline. It probably delays it... realistically the visibility matters and the projects I'm running now are what my case is built on.\""
+        },
+        {
+          "id": 3,
+          "assumption": "Waiting two years meaningfully improves financial readiness — that $110-120K in savings and the higher VP salary would materially reduce the stress or risk of the ~$60K annual cost increase, rather than simply moving the disruption.",
+          "grounded_in": "\"Two years also gives us time to save more money. We have about $55K in savings right now. By waiting two years we'd have closer to $110-120K... That matters because childcare in NYC is genuinely shocking.\""
+        },
+        {
+          "id": 4,
+          "assumption": "The fertility difference between starting now at 32 versus starting at 34 is manageable and does not materially compress or jeopardize the two-child plan — that the gap in outcomes is real but acceptable.",
+          "grounded_in": "\"The fertility case for not waiting is real but not urgent at 32... fertility doesn't fall off a cliff at 35, but it does change. IVF success rates drop meaningfully between 32 and 37.\""
+        },
+        {
+          "id": 5,
+          "assumption": "The two-year wait is a decision that will actually be made and executed — that choosing to wait now does not simply restart the same deliberation loop in 18-24 months under a new set of not-quite-right conditions.",
+          "grounded_in": "\"There's a version of this where we just keep waiting. When the timing is 'right.' And I'm aware of couples who did that, and some of them are fine and some of them are not.\""
+        }
+      ],
+      "objections": [
+        {
+          "id": 1,
+          "title": "Promotion certainty is doing too much work",
+          "grounded_in": "\"what looks like a fairly certain promotion... My manager has said explicitly that I'm 'on track' and the organizational structure supports it.\"",
+          "objection": "The entire financial and career case for waiting is load-bearing on a promotion that is described as 'fairly certain' based on managerial signals at a Series D company — a stage where organizational restructuring, leadership changes, and strategic pivots routinely invalidate 18-month career roadmaps.",
+          "challenge": "You have already identified this flaw yourself: 'What if we wait two years and something changes at the company?' But you treat this as a minor caveat rather than a structural problem. A Series D company is not a stable bureaucracy where 'on track' means 'guaranteed.' The equity you are partly waiting for is also contingent on a liquidity event you describe as having 'a path' — not a certainty. You are being asked to make a two-year biological and relational decision on the basis of a corporate outcome with multiple independent failure modes, none of which you control."
+        },
+        {
+          "id": 2,
+          "title": "Two-child fertility math is not stress-tested",
+          "grounded_in": "\"If we wait two years to start, I'm 34 when we have the first. If we want a second child two to three years after that, I'm 36 or 37.\"",
+          "objection": "You cite the fertility data accurately for first-child conception but do not apply the compounding logic: the two-child plan requires not one but two successful conceptions and pregnancies, with the second beginning at 36-37 — where your own cited data shows IVF success rates dropping to 30-35% per cycle.",
+          "challenge": "The data you included shows cumulative pregnancy rates of 78-80% at 34 for the first child, but the second conception attempt starts from a lower baseline after a first pregnancy, postpartum recovery, and potentially reduced ovarian reserve. The scenario in which both children arrive on the two-to-three-year spacing you describe requires two independent fertility events to succeed within compressed windows. You are treating 'fertility doesn't fall off a cliff at 35' as exculpatory, but that framing applies to first-child planning — not to a two-child plan where the second attempt lands squarely in the age range where your own cited statistics show meaningful decline."
+        },
+        {
+          "id": 3,
+          "title": "Financial buffer logic conflates cushion with cost",
+          "grounded_in": "\"By waiting two years we'd have closer to $110-120K... That matters because childcare in NYC is genuinely shocking — I've been told to expect $3,200-3,800/month for infant care.\"",
+          "objection": "The savings doubling from $55K to $110-120K feels like a meaningful improvement in readiness, but against $60K in annual new costs, the additional $55-65K in savings represents less than one additional year of the cost delta — while you simultaneously forgo two years of compound time to absorb those costs at the higher VP salary.",
+          "challenge": "If you wait two years, receive the promotion, and then have a child, you will be covering the same $60K annual cost increase, but from a higher income base and with more savings. That is a genuine improvement. But the framing obscures that the $55K savings gap closes in under one year at current savings rates regardless — and that if the promotion does not materialize, the additional savings are your only buffer, which is thin against multi-year infant and toddler costs in NYC. The financial case for waiting is real, but it is significantly weaker than the round numbers suggest once you model the scenario where the promotion timeline slips or fails."
+        },
+        {
+          "id": 4,
+          "title": "Waiting may be avoidance, not strategy",
+          "grounded_in": "\"I think I want to wait. But I notice I can't fully articulate what I'm waiting for.\"",
+          "objection": "You have identified, in your own words, that you cannot fully articulate what you are waiting for — and yet the entire structure of this document is organized around reasons to wait. That gap between the conclusion and the inability to name its true source is the concern.",
+          "challenge": "The document's framing — 'wait is the responsible, sensible choice and now is something that needs justification' — is your own diagnosis of a bias you have not corrected for. James's read is that you are 'slightly overweighting the VP promotion as a fixed thing,' and you note he is 'not wrong.' The promotion gives the waiting a respectable, legible rationale. But you have been circling this for a year, you keep not deciding, and the one thing you can say with confidence is that you cannot articulate what you are waiting for. At HIGH stakes, a decision structured around a concrete external milestone that the decision-maker privately suspects is a rationalization deserves to be named directly: the wait may be functioning as indefinite deferral, not a plan."
+        }
+      ]
+    },
+    {
+      "run": 2,
+      "assumption_map": [
+        {
+          "id": 1,
+          "assumption": "The VP promotion is effectively secured and will materialize on an 18-month timeline, making the financial upside ($45-55K salary increase plus meaningful equity) a reliable input into the timing calculus.",
+          "grounded_in": "\"My manager has said explicitly that I'm 'on track' and the organizational structure supports it.\""
+        },
+        {
+          "id": 2,
+          "assumption": "Taking parental leave during the 18-month runway would materially delay or derail the promotion, meaning that starting a pregnancy now and waiting two years are mutually exclusive paths to the VP role.",
+          "grounded_in": "\"If I go on leave during the 18-month runway to the VP role, I'm not sure what that does to the promotion timeline. It probably delays it.\""
+        },
+        {
+          "id": 3,
+          "assumption": "Waiting two years is a stable, controllable decision — that the option to start trying at 34 will be available and roughly equivalent to trying now at 32, with fertility decline being a real but manageable risk rather than a decisive one.",
+          "grounded_in": "\"The fertility case for not waiting is real but not urgent at 32.\""
+        },
+        {
+          "id": 4,
+          "assumption": "The $60,000/year incremental cost of a child in year one can be absorbed on current income ($175K base plus whatever James earns), even if it is tight, because savings and income together provide adequate buffer.",
+          "grounded_in": "\"James... thinks we'll figure it out... financially we could manage it — tight for a year, then okay once the childcare costs decrease as kids get older.\""
+        },
+        {
+          "id": 5,
+          "assumption": "Two years of additional savings ($55K to $110-120K) meaningfully changes the risk profile of having a child, rather than being quickly consumed by startup costs, and is therefore a genuine reason to wait rather than a psychological comfort.",
+          "grounded_in": "\"By waiting two years we'd have closer to $110-120K depending on expenses. That matters because childcare in NYC is genuinely shocking.\""
+        }
+      ],
+      "objections": [
+        {
+          "id": 1,
+          "title": "Promotion certainty is doing too much work",
+          "grounded_in": "\"The career case for waiting is real but not certain.\"",
+          "objection": "You acknowledge the promotion is not certain, then build the entire financial case for waiting on the assumption that it is. These two things cannot both be true in the same argument.",
+          "challenge": "Your own language — 'fairly certain,' 'on track,' 'organizational structure supports it' — is managerial encouragement, not a binding commitment. Series D companies restructure, reprioritize, and lose funding; the 'organizational structure' that supports your VP path today may not exist in 18 months. You are being asked to trade a known biological window against a corporate outcome you explicitly admitted you don't fully control, and your financial model treats the $45-55K salary increase as already banked. If the promotion delays, is restructured, or you leave the company before it materializes, the entire two-year deferral produces neither the savings nor the title — only the age."
+        },
+        {
+          "id": 2,
+          "title": "Savings buffer disappears faster than modeled",
+          "grounded_in": "\"By waiting two years we'd have closer to $110-120K depending on expenses. That matters because childcare in NYC is genuinely shocking — I've been told to expect $3,200-3,800/month for infant care.\"",
+          "objection": "The $110-120K savings figure assumes two years of clean accumulation, but the same childcare and housing costs that make waiting feel financially prudent will consume that buffer rapidly once a child arrives — regardless of when that is.",
+          "challenge": "Your $60,000/year incremental cost estimate means the additional $55-65K saved during the wait is essentially one year of new expenses. After twelve months with a child, the two-year saver and the person who started now are in nearly identical financial positions — except the person who started now is twelve months further into the childcare cost curve, where costs begin declining as the child ages out of infant care. The savings buffer is not being stress-tested against the speed at which it will be drawn down; it is being treated as permanent security when it is actually a short runway."
+        },
+        {
+          "id": 3,
+          "title": "Fertility compression for two children is underweighted",
+          "grounded_in": "\"If we wait two years to start, I'm 34 when we have the first. If we want a second child two to three years after that, I'm 36 or 37.\"",
+          "objection": "You name this concern and then set it aside by noting fertility 'doesn't fall off a cliff at 35.' But your own cited data shows IVF success rates drop from 40-45% per cycle at 32 to 30-35% at 35+, and you want two children — which means the second conception is the higher-stakes event.",
+          "challenge": "The fertility risk of waiting is not primarily about conceiving the first child at 34, where your data suggests ~78-80% cumulative pregnancy rate within 12 months — still reasonable. The risk concentrates on the second attempt at 36-37, where both natural fertility and IVF efficacy are meaningfully lower, and where a difficult second conception could force a choice between a larger age gap than you want, aggressive intervention, or stopping at one child. You are evaluating the fertility question as if the first pregnancy is the relevant data point, when by your own family planning timeline, the second is."
+        },
+        {
+          "id": 4,
+          "title": "Waiting may be avoidance dressed as planning",
+          "grounded_in": "\"I think I want to wait. But I notice I can't fully articulate what I'm waiting for.\"",
+          "objection": "You wrote that sentence yourself, and it is the most important line in the document. An inability to articulate what you are waiting for is not a sign of prudent deliberation — it is a signal that waiting has become the default state, not an active choice.",
+          "challenge": "The framing throughout this document positions 'wait' as responsible and 'now' as requiring justification, but you explicitly flag that framing as potentially non-neutral. James — who knows you and your finances — believes you are overweighting the promotion as a fixed anchor. You have been 'circling this question for about a year' without resolution. The pattern you describe — 'there's a version of this where we just keep waiting' — is not a hypothetical about other couples. It is an accurate description of what has been happening in your own decision-making for the past twelve months. The financial and career reasons for waiting are real, but they may also be providing cover for an underlying reluctance that is not being named."
+        }
+      ]
+    },
+    {
+      "run": 3,
+      "assumption_map": [
+        {
+          "id": 1,
+          "assumption": "The VP promotion is sufficiently certain and on a predictable timeline that it is reasonable to make a major life-timing decision around it.",
+          "grounded_in": "\"18 months away from what looks like a fairly certain promotion to VP of Product at my company. My manager has said explicitly that I'm 'on track' and the organizational structure supports it.\""
+        },
+        {
+          "id": 2,
+          "assumption": "Taking parental leave during the 18-month runway would meaningfully delay or derail the promotion, even if it cannot legally do so.",
+          "grounded_in": "\"If I go on leave during the 18-month runway to the VP role, I'm not sure what that does to the promotion timeline. It probably delays it. Officially it wouldn't, and legally my company can't hold it against me, but realistically the visibility matters.\""
+        },
+        {
+          "id": 3,
+          "assumption": "The financial model — approximately $60,000/year in new costs — is the correct frame for evaluating affordability, and the $110–120K savings target from waiting provides materially better footing than $55K now.",
+          "grounded_in": "\"Call it $60,000/year in new costs. That's real money and waiting two years to accumulate more savings and get the promotion first makes genuine sense.\""
+        },
+        {
+          "id": 4,
+          "assumption": "Waiting two years does not create meaningful fertility risk for a first pregnancy, but does create compounding risk for a second child due to age at attempt.",
+          "grounded_in": "\"The honest answer is that waiting two years compresses everything if we want two kids.\""
+        },
+        {
+          "id": 5,
+          "assumption": "The desire to wait reflects a genuine preference for readiness rather than an indefinitely receding threshold — that is, the two-year plan has a real endpoint rather than being a perpetually renewable deferral.",
+          "grounded_in": "\"There's a version of this where we just keep waiting. When the timing is 'right.' And I'm aware of couples who did that, and some of them are fine and some of them are not.\""
+        }
+      ],
+      "objections": [
+        {
+          "id": 1,
+          "title": "Promotion certainty is doing too much work",
+          "grounded_in": "\"what looks like a fairly certain promotion\" / \"the organizational structure supports it\" / \"What if we wait two years and something changes at the company?\"",
+          "objection": "The financial and career case for waiting is built on an 18-month organizational outcome you have already identified as uncertain — and you are simultaneously aware of this fragility while continuing to treat the promotion as the anchor of the plan.",
+          "challenge": "You note yourself that 'the career case for waiting is real but not certain' and that you might 'get the promotion and then something changes.' Series D companies over an 18-month window face meaningful risk of restructuring, leadership changes, hiring freezes, or strategic pivots that can eliminate or redefine VP roles. The $45-55K salary jump and equity refresh are not banked until they are granted — you are deferring a fertility window and a major life decision against a probability, not a fact. If the promotion slips by 6 months, or the equity story changes, or you leave within a year of receiving it, the two-year wait trades biological optionality for a career outcome that may not materialize as modeled."
+        },
+        {
+          "id": 2,
+          "title": "The savings buffer does not survive contact with actual costs",
+          "grounded_in": "\"By waiting two years we'd have closer to $110-120K depending on expenses\" / \"childcare in NYC is genuinely shocking — I've been told to expect $3,200-3,800/month for infant care\" / \"rent increase: $950/month\"",
+          "objection": "The $110-120K savings figure is presented as meaningfully safer than $55K now, but your own cost model shows that figure covers less than two years of new expenses — and that is before accounting for the income disruption of parental leave.",
+          "challenge": "At $60,000/year in new costs, $110K buys roughly 22 months of buffer above baseline — and that assumes no leave-related income reduction, no medical costs for pregnancy or delivery, no one-time setup costs for a larger apartment, and no cost inflation between now and then. You are also implicitly modeling two incomes continuing at full capacity through infancy, which is not guaranteed. The gap between $55K and $110K feels large, but when stress-tested against your own numbers, neither figure is a cushion so much as a shorter or longer runway to the same constraint. The framing of 'more savings' obscures that the question is really whether the marginal $55K changes the risk profile — and at these cost levels, it may not."
+        },
+        {
+          "id": 3,
+          "title": "Two years assumes the deferral has a hard stop",
+          "grounded_in": "\"There's a version of this where we just keep waiting. When the timing is 'right.' And I'm aware of couples who did that\" / \"I think I want to wait. But I notice I can't fully articulate what I'm waiting for.\"",
+          "objection": "You have identified, in your own words, that you cannot fully articulate what you are waiting for — which means the two-year plan does not have a defined trigger condition, only a hoped-for endpoint.",
+          "challenge": "A deferral without a concrete commitment mechanism is not a plan with a two-year horizon; it is a renewable option on indefinite delay. After the promotion, there will be a new equity vesting cliff, a new savings target, a new project you don't want to interrupt. You have already spent a year circling this question without deciding. The psychological pattern you are describing — 'wait' feels controlled, 'now' feels like disruption — does not resolve when external conditions improve; it relocates to the next threshold. The fertility data you cited is not alarming at 32, but it is directional: the 7-10 percentage point drop in cumulative pregnancy rate between 32 and 34 is not a cliff, but a second deferral after this one puts you at 36 or 37 for a second child, compounding a risk you have already named."
+        },
+        {
+          "id": 4,
+          "title": "Avoidance may be driving the frame, not readiness",
+          "grounded_in": "\"I frame 'wait' as the responsible, sensible choice and 'now' as something that needs justification\" / \"Waiting feels controlled and deliberate. Having a baby now feels like giving something up or accepting disruption.\" / \"I don't entirely trust my emotional read right now\"",
+          "objection": "You have explicitly named that your framing is not neutral and that you do not trust your own emotional read — which means the stated rationale for waiting (financial prudence, career timing) may be providing cover for something you have not fully examined.",
+          "challenge": "The language you use about 'now' is loss-framed throughout: 'giving something up,' 'accepting disruption,' uncertainty about what happens to your promotion. The language you use about waiting is control-framed: deliberate, responsible, sensible. This asymmetry is not a neutral assessment of options — it is the signature of avoidance dressed in planning. That is not a moral failing, but it is a diagnostic: if the honest driver of 'wait' is discomfort with disruption rather than genuine conviction that two years improves the outcome, then the two-year plan will not resolve the discomfort — it will defer it while consuming biological time and building a new set of conditions that also won't feel quite right."
+        }
+      ]
+    }
+  ],
+  "analysis": {
+    "language_variance_score": {
+      "value": 0,
+      "unit": "percentage points",
+      "interpretation": "No difference — keyword and semantic clustering agree",
+      "keyword_consistency_rate": 100,
+      "semantic_consistency_rate": 100
+    },
+    "raw": {
+      "method": "keyword overlap — titles sharing ≥1 non-stop word are grouped",
+      "clusters": [
+        {
+          "representative_title": "Promotion certainty is doing too much work",
+          "matched_titles": [
+            "Promotion certainty is doing too much work"
+          ],
+          "appeared_in_runs": [
+            1,
+            2,
+            3
+          ],
+          "appeared_in_count": 3
+        },
+        {
+          "representative_title": "Two-child fertility math is not stress-tested",
+          "matched_titles": [
+            "Two-child fertility math is not stress-tested",
+            "Waiting may be avoidance, not strategy",
+            "Fertility compression for two children is underweighted",
+            "The savings buffer does not survive contact with actual costs",
+            "Two years assumes the deferral has a hard stop",
+            "Avoidance may be driving the frame, not readiness"
+          ],
+          "appeared_in_runs": [
+            1,
+            2,
+            3
+          ],
+          "appeared_in_count": 3
+        },
+        {
+          "representative_title": "Financial buffer logic conflates cushion with cost",
+          "matched_titles": [
+            "Financial buffer logic conflates cushion with cost",
+            "Savings buffer disappears faster than modeled",
+            "The savings buffer does not survive contact with actual costs"
+          ],
+          "appeared_in_runs": [
+            1,
+            2,
+            3
+          ],
+          "appeared_in_count": 3
+        },
+        {
+          "representative_title": "Waiting may be avoidance dressed as planning",
+          "matched_titles": [
+            "Waiting may be avoidance, not strategy",
+            "Waiting may be avoidance dressed as planning",
+            "Avoidance may be driving the frame, not readiness"
+          ],
+          "appeared_in_runs": [
+            1,
+            2,
+            3
+          ],
+          "appeared_in_count": 3
+        }
+      ],
+      "consistent_across_all_runs": [
+        {
+          "representative_title": "Promotion certainty is doing too much work",
+          "matched_titles": [
+            "Promotion certainty is doing too much work"
+          ],
+          "appeared_in_runs": [
+            1,
+            2,
+            3
+          ],
+          "appeared_in_count": 3
+        },
+        {
+          "representative_title": "Two-child fertility math is not stress-tested",
+          "matched_titles": [
+            "Two-child fertility math is not stress-tested",
+            "Waiting may be avoidance, not strategy",
+            "Fertility compression for two children is underweighted",
+            "The savings buffer does not survive contact with actual costs",
+            "Two years assumes the deferral has a hard stop",
+            "Avoidance may be driving the frame, not readiness"
+          ],
+          "appeared_in_runs": [
+            1,
+            2,
+            3
+          ],
+          "appeared_in_count": 3
+        },
+        {
+          "representative_title": "Financial buffer logic conflates cushion with cost",
+          "matched_titles": [
+            "Financial buffer logic conflates cushion with cost",
+            "Savings buffer disappears faster than modeled",
+            "The savings buffer does not survive contact with actual costs"
+          ],
+          "appeared_in_runs": [
+            1,
+            2,
+            3
+          ],
+          "appeared_in_count": 3
+        },
+        {
+          "representative_title": "Waiting may be avoidance dressed as planning",
+          "matched_titles": [
+            "Waiting may be avoidance, not strategy",
+            "Waiting may be avoidance dressed as planning",
+            "Avoidance may be driving the frame, not readiness"
+          ],
+          "appeared_in_runs": [
+            1,
+            2,
+            3
+          ],
+          "appeared_in_count": 3
+        }
+      ],
+      "appeared_in_some_runs": [],
+      "unique_to_one_run": []
+    },
+    "deduplicated": {
+      "method": "semantic grouping via Claude — same underlying concern regardless of phrasing",
+      "clusters": [
+        {
+          "canonical_title": "Promotion certainty assumption is overloaded",
+          "titles": [
+            "Promotion certainty is doing too much work",
+            "Promotion certainty is doing too much work",
+            "Promotion certainty is doing too much work"
+          ],
+          "runs": [
+            1,
+            2,
+            3
+          ],
+          "appeared_in_count": 3
+        },
+        {
+          "canonical_title": "Savings buffer understates real costs",
+          "titles": [
+            "Financial buffer logic conflates cushion with cost",
+            "Savings buffer disappears faster than modeled",
+            "The savings buffer does not survive contact with actual costs"
+          ],
+          "runs": [
+            1,
+            2,
+            3
+          ],
+          "appeared_in_count": 3
+        },
+        {
+          "canonical_title": "Two-child fertility timeline is under-scrutinized",
+          "titles": [
+            "Two-child fertility math is not stress-tested",
+            "Fertility compression for two children is underweighted",
+            "Two years assumes the deferral has a hard stop"
+          ],
+          "runs": [
+            1,
+            2,
+            3
+          ],
+          "appeared_in_count": 3
+        },
+        {
+          "canonical_title": "Waiting may reflect avoidance not strategy",
+          "titles": [
+            "Waiting may be avoidance, not strategy",
+            "Waiting may be avoidance dressed as planning",
+            "Avoidance may be driving the frame, not readiness"
+          ],
+          "runs": [
+            1,
+            2,
+            3
+          ],
+          "appeared_in_count": 3
+        }
+      ],
+      "consistent_across_all_runs": [
+        {
+          "canonical_title": "Promotion certainty assumption is overloaded",
+          "titles": [
+            "Promotion certainty is doing too much work",
+            "Promotion certainty is doing too much work",
+            "Promotion certainty is doing too much work"
+          ],
+          "runs": [
+            1,
+            2,
+            3
+          ],
+          "appeared_in_count": 3
+        },
+        {
+          "canonical_title": "Savings buffer understates real costs",
+          "titles": [
+            "Financial buffer logic conflates cushion with cost",
+            "Savings buffer disappears faster than modeled",
+            "The savings buffer does not survive contact with actual costs"
+          ],
+          "runs": [
+            1,
+            2,
+            3
+          ],
+          "appeared_in_count": 3
+        },
+        {
+          "canonical_title": "Two-child fertility timeline is under-scrutinized",
+          "titles": [
+            "Two-child fertility math is not stress-tested",
+            "Fertility compression for two children is underweighted",
+            "Two years assumes the deferral has a hard stop"
+          ],
+          "runs": [
+            1,
+            2,
+            3
+          ],
+          "appeared_in_count": 3
+        },
+        {
+          "canonical_title": "Waiting may reflect avoidance not strategy",
+          "titles": [
+            "Waiting may be avoidance, not strategy",
+            "Waiting may be avoidance dressed as planning",
+            "Avoidance may be driving the frame, not readiness"
+          ],
+          "runs": [
+            1,
+            2,
+            3
+          ],
+          "appeared_in_count": 3
+        }
+      ],
+      "appeared_in_some_runs": [],
+      "unique_to_one_run": []
+    }
+  }
+}

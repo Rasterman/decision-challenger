@@ -1,0 +1,49 @@
+# Should I Get an MBA? Working Through the Decision
+
+# Note on data: Wharton tuition 2024-25 is $87,490/year (Wharton website), total program ~$174,980.
+# Wharton MBA employment report 2024: median base salary $175,000, median signing bonus $30,000.
+# Senior PM salary at 5-6 years experience: $155-175K base (Levels.fyi, Glassdoor 2024 data).
+# Living expenses at Wharton (Philadelphia): ~$25-30K/year on top of tuition.
+
+I've been in product for five years, currently a Senior PM at a fintech startup (Series C, $185M raised, about 200 people). I make $165,000 base plus equity. I'm 31.
+
+I've been going back and forth on the Wharton MBA for about eight months. I got into the deferred enrollment program two years ago and let it lapse. I'm applying for the standard two-year program now. I want to write out my actual reasoning because I think I've been telling myself a story that might not fully hold together.
+
+**The financial case**
+
+Tuition at Wharton is $87,490/year. Two years: $174,980. Add living expenses in Philadelphia of roughly $27,000/year = $54,000 over two years. Total out-of-pocket cost: approximately $229,000.
+
+Wharton's Class of 2024 employment report shows median base salary of $175,000 for MBA graduates. Median signing bonus is $30,000. In product management, the post-MBA bump tends to be larger if you're coming from a non-traditional PM background, but my background is already PM so let's use the baseline.
+
+I currently make $165,000. Post-MBA median is $175,000. That's a $10,000/year lift in base salary.
+
+At $10K/year uplift, the payback period on $229K is 22.9 years. That seems absurd, but people also cite the signing bonus, so let's include it: $229K - $30K = $199K remaining, at $10K/year = 19.9 years. Still absurd.
+
+But I think I'm framing this wrong. I'm not doing an MBA to go back to being a Senior PM. I'm doing it because:
+
+1. I want a path into VC or growth equity. I keep getting filtered at the "MBA from top school" screen. It's a credential problem.
+2. I want the Wharton network. The alumni base in fintech and VC is extremely dense.
+3. I want to explore consulting (specifically MBB post-MBA) as an option I've never had. Median consulting salary post-Wharton is more like $190-195K plus bonus structures.
+4. Honestly, I'm a little burned out and a two-year reset with intellectual variety sounds good.
+
+On the VC path specifically: post-MBA roles at VC firms are rare but they exist, and Wharton's VC lab and alumni network are a real accelerant. If I land a VC associate role or consulting role, the economics look more like $200-220K in year 1 post-MBA — a $35-55K lift from current, not $10K. At $45K/year: $199K ÷ $45K = 4.4 years payback. That's a real return.
+
+**The opportunity cost I'm not accounting for**
+
+I keep writing down "two years of foregone income" as one line item, but I should be honest about what that actually is. I'm earning $165K now. If I stay on my current trajectory, by the time I graduate I'd probably be at $175-185K base with more equity. So the real cost isn't $165K × 2 = $330K foregone — it's more like $170K average × 2 = $340K.
+
+Total real cost: $229K tuition/living + $340K foregone income = $569K. At a $45K/year uplift: 12.6 years to break even in cash terms. That's still the wrong framing though because it ignores optionality value and the VC/consulting path that my current trajectory doesn't unlock.
+
+**What's actually driving this**
+
+I want to be honest with myself. The financial ROI case is genuinely weak if I'm comparing post-MBA Senior PM salary to current Senior PM salary. The case only looks good if I assume I successfully transition to a higher-ceiling role (VC, consulting, startup leadership with a credentialed path).
+
+The other thing I notice is that some of my motivation is avoidance. I'm not thriving in my current role — the company has some organizational issues I don't see resolving, and part of me wants a principled exit rather than just looking for another PM job. That's not a good reason to spend $229K.
+
+I think the right question is: do I actually want to work in VC or consulting, or do I want the MBA because it's a socially legible achievement that gives me cover to leave my current situation?
+
+I don't have a clean answer to that. But I'm going to apply and decide when I have an acceptance in hand.
+
+**Bottom line**
+
+The ROI is real if — and only if — I use the MBA to pivot rather than return to PM. The network case is strong. The credential barrier in VC is real. I'm applying.
